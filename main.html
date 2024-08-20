@@ -1,0 +1,1168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web player:Music for everyone</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="main.css">
+    <link rel="icon" type="image/x-icon" href="https://flyclipart.com/thumb2/image-348181.png" />
+</head>
+<body>
+    <div id="wrapper">
+        <div class="side">
+            <div class="s1">
+                <button id="home_button">
+                <div class="home">
+                    <i ><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40H456c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1H416 392c-22.1 0-40-17.9-40-40V448 384c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32v64 24c0 22.1-17.9 40-40 40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 .1-2.8V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z"/></svg></i>
+                    <a class="text">Home</a>
+                </div>
+            </button>
+                <button id="search_button"> <div class="home">
+                    <i><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg></i>
+                    <a class="text">Search</a>
+                  </div>
+                </button> 
+                <script src="script.js"></script> 
+            </div>
+            <div class="s2">
+                <div class="header">
+                    <div class="h1">
+                    <i><svg class ="icon" role="img" aria-hidden="true" viewBox="0 0 24 24" class="Svg-sc-ytk21e-0 bneLcE"><path d="M3 22a1 1 0 0 1-1-1V3a1 1 0 0 1 2 0v18a1 1 0 0 1-1 1zM15.5 2.134A1 1 0 0 0 14 3v18a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V6.464a1 1 0 0 0-.5-.866l-6-3.464zM9 2a1 1 0 0 0-1 1v18a1 1 0 1 0 2 0V3a1 1 0 0 0-1-1z"></path></svg></i>
+                     <buton class="b1"><a class="y"href="">Your Library</a>
+                     </buton>
+                    </div> 
+                    <div class="h2">
+                        <svg class="icon2" id="i2"role="img" aria-hidden="true" viewBox="0 0 16 16" class="Svg-sc-ytk21e-0 dYnaPI"><path d="M15.25 8a.75.75 0 0 1-.75.75H8.75v5.75a.75.75 0 0 1-1.5 0V8.75H1.5a.75.75 0 0 1 0-1.5h5.75V1.5a.75.75 0 0 1 1.5 0v5.75h5.75a.75.75 0 0 1 .75.75z"></path></svg>
+                        <svg class="icon2" role="img" aria-hidden="true" viewBox="0 0 16 16" class="Svg-sc-ytk21e-0 cAMMLk"><path d="M7.19 1A.749.749 0 0 1 8.47.47L16 7.99l-7.53 7.521a.75.75 0 0 1-1.234-.815.75.75 0 0 1 .174-.243l5.72-5.714H.75a.75.75 0 1 1 0-1.498h12.38L7.41 1.529a.749.749 0 0 1-.22-.53z"></path></svg>
+                    </div>
+                </div>
+                <div class="s2mid">
+                    <button class="bf" id="bf1">Playlists</button>
+                    <button class="bf">Artists</button>
+                    <button class="bf">Albums</button>
+                </div>
+                <div class="s2foot">
+                    <div class="s2fh">
+                        <button class="ba"><svg class="icon2" data-encore-id="icon" role="img" aria-hidden="true" class="Svg-sc-ytk21e-0 dYnaPI CIVozJ8XNPJ60uMN23Yg" viewBox="0 0 16 16"><path d="M7 1.75a5.25 5.25 0 1 0 0 10.5 5.25 5.25 0 0 0 0-10.5zM.25 7a6.75 6.75 0 1 1 12.096 4.12l3.184 3.185a.75.75 0 1 1-1.06 1.06L11.304 12.2A6.75 6.75 0 0 1 .25 7z"></path></svg></button>
+                        <div class="recents">
+                            <button class="rec">Recents</button>
+                            <svg class="icon_3" role="img" aria-hidden="true" viewBox="0 0 16 16" class="Svg-sc-ytk21e-0 cAMMLk"><path d="M15 14.5H5V13h10v1.5zm0-5.75H5v-1.5h10v1.5zM15 3H5V1.5h10V3zM3 3H1V1.5h2V3zm0 11.5H1V13h2v1.5zm0-5.75H1v-1.5h2v1.5z"></path></svg>
+                        </div>
+                    </div>
+                    <div class="gane" id="playlist_button">
+                        <div class="dil"><img class="like" draggable="false" loading="eager" src="https://misc.scdn.co/liked-songs/liked-songs-64.png" data-testid="entity-image" alt="Liked Songs" class="mMx2LUixlnN_Fu45JpFB iJp40IxKg6emF6KYJ414 yOKoknIYYzAE90pe7_SE Yn2Ei5QZn19gria6LjZj" srcset="https://misc.scdn.co/liked-songs/liked-songs-64.png 32w, https://misc.scdn.co/liked-songs/liked-songs-64.png 64w">
+                        </div>
+                        <div class="t">Liked Songs</div>                        
+                        <div class="d">Playlist . 12 Songs</div>
+                    </div>
+                    <script src="script.js"></script>
+                    <div class="gane">
+                        <div class="dil gh" ><img class="i" aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67616d00001e02a60e15441493b2368f002ab6" alt="Dilpreet Dhillon" class="mMx2LUixlnN_Fu45JpFB CmkY1Ag0tJDfnFXbGgju _EShSNaBK1wUIaZQFJJQ ta4ePOlmGXjBYPTd90lh Yn2Ei5QZn19gria6LjZj" srcset="https://i.scdn.co/image/ab67616d00001e02a60e15441493b2368f002ab6 150w, https://i.scdn.co/image/ab67616d00001e02a60e15441493b2368f002ab6 300w, https://i.scdn.co/image/ab67616d0000b273a60e15441493b2368f002ab6 320w, https://i.scdn.co/image/ab67616d0000b273a60e15441493b2368f002ab6 640w" sizes="(min-width: 1280px) 232px, 192px"> </div>
+                        <div class="t">Dilpreet Dhillon</div>
+                        <div class="d">Artist</div>
+                    </div>
+                    <div class="gane">
+                        <div class="dil gh"><img class="i" aria-hidden="true" draggable="false" loading="eager" src="https://i.scdn.co/image/ab6761610000101ffc043bea91ac91c222d235c9" data-testid="entity-image" alt="Diljit Dosanjh" class="mMx2LUixlnN_Fu45JpFB iJp40IxKg6emF6KYJ414 Yn2Ei5QZn19gria6LjZj">
+                        </div>
+                        <div class="t">Diljit Dosanjh</div>
+                        <div class="d">Artist</div>
+                    </div>
+                    <div class="gane">
+                        <div class="dil g"><img class="i"aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67616d00001e02982004d48d4e975ae4c328c6" alt="Choice" class="mMx2LUixlnN_Fu45JpFB CmkY1Ag0tJDfnFXbGgju _EShSNaBK1wUIaZQFJJQ Yn2Ei5QZn19gria6LjZj" srcset="https://i.scdn.co/image/ab67616d00001e02982004d48d4e975ae4c328c6 150w, https://i.scdn.co/image/ab67616d00001e02982004d48d4e975ae4c328c6 300w, https://i.scdn.co/image/ab67616d0000b273982004d48d4e975ae4c328c6 320w, https://i.scdn.co/image/ab67616d0000b273982004d48d4e975ae4c328c6 640w" sizes="(min-width: 1280px) 232px, 192px"> </div>
+                        <div class="t">Liked Songs</div>
+                        <div class="d">Album . Amar Sehmbhi</div>
+                    </div>
+                    <div class="gane">
+                        <div class="dil gh "><img class="i"aria-hidden="true" draggable="false" loading="eager" src="https://i.scdn.co/image/ab6761610000101fe4ba826a2a73d0d81dab0618" data-testid="entity-image" alt="Gurnam Bhullar" class="mMx2LUixlnN_Fu45JpFB iJp40IxKg6emF6KYJ414 Yn2Ei5QZn19gria6LjZj"></div>
+                        <div class="t">Gurnam Bhullar</div>
+                        <div class="d">Artist</div>
+                    </div>
+                    <div class="gane">
+                        <div class="dil"><img class="like" aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67616d00001e02497b38a2a59095193de438d1" alt="Ram Siya Ram (From &quot;Adipurush&quot;)" class="mMx2LUixlnN_Fu45JpFB CmkY1Ag0tJDfnFXbGgju _EShSNaBK1wUIaZQFJJQ Yn2Ei5QZn19gria6LjZj" srcset="https://i.scdn.co/image/ab67616d00001e02497b38a2a59095193de438d1 150w, https://i.scdn.co/image/ab67616d00001e02497b38a2a59095193de438d1 300w, https://i.scdn.co/image/ab67616d0000b273497b38a2a59095193de438d1 320w, https://i.scdn.co/image/ab67616d0000b273497b38a2a59095193de438d1 640w" sizes="(min-width: 1280px) 232px, 192px"> </div>
+                        <div class="t">My Playlist #1</div>
+                        <div class="d">Playlist . Khushalgoyal</div>
+                    </div>
+                    <div class="gane">
+                        <div class="dil gh "><img class="i" aria-hidden="true" draggable="false" loading="eager" src="https://i.scdn.co/image/ab6761610000101f9973157bdaedef3f77ef8e13" data-testid="entity-image" alt="Sidhu Moose Wala" class="mMx2LUixlnN_Fu45JpFB iJp40IxKg6emF6KYJ414 Yn2Ei5QZn19gria6LjZj"> </div>
+                        <div class="t">Sidhu Moose Wala</div>
+                        <div class="d">Artist</div>
+                    </div>
+                    <div class="gane">
+                        <div class="dil gh"><img class="i" aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67616100005174ddd4f32c636b2004ad325a57" alt="Jass Bajwa" class="mMx2LUixlnN_Fu45JpFB CmkY1Ag0tJDfnFXbGgju _EShSNaBK1wUIaZQFJJQ ta4ePOlmGXjBYPTd90lh Yn2Ei5QZn19gria6LjZj" srcset="https://i.scdn.co/image/ab67616100005174ddd4f32c636b2004ad325a57 160w, https://i.scdn.co/image/ab67616100005174ddd4f32c636b2004ad325a57 320w, https://i.scdn.co/image/ab6761610000e5ebddd4f32c636b2004ad325a57 320w, https://i.scdn.co/image/ab6761610000e5ebddd4f32c636b2004ad325a57 640w" sizes="(min-width: 1280px) 232px, 192px">  </div>
+                        <div class="t">Jass Bajwa</div>
+                        <div class="d">Artist</div>
+                    </div>
+                    <div class="gane">
+                        <div class="dil gh"><img class="i" aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab6761610000517445bce2d563afdb000f8f8136" alt="Parmish Verma" class="mMx2LUixlnN_Fu45JpFB CmkY1Ag0tJDfnFXbGgju _EShSNaBK1wUIaZQFJJQ ta4ePOlmGXjBYPTd90lh Yn2Ei5QZn19gria6LjZj" srcset="https://i.scdn.co/image/ab6761610000517445bce2d563afdb000f8f8136 160w, https://i.scdn.co/image/ab6761610000517445bce2d563afdb000f8f8136 320w, https://i.scdn.co/image/ab6761610000e5eb45bce2d563afdb000f8f8136 320w, https://i.scdn.co/image/ab6761610000e5eb45bce2d563afdb000f8f8136 640w" sizes="(min-width: 1280px) 232px, 192px"> </div>
+                        <div class="t">Parmish Verma</div>
+                        <div class="d">Artist</div>
+                    </div>
+                    <div class="gane">
+                        <div class="dil gh"><img class="i" aria-hidden="false" draggable="false" loading="eager" src="https://i.scdn.co/image/ab67616d00001e0297b2a275306862037a745e84" alt="" class="mMx2LUixlnN_Fu45JpFB _GJZaoUD9ozPvCUDT2Mp Yn2Ei5QZn19gria6LjZj" style="border-radius: 4px;" width="88" height="88"> </div>
+                        <div class="t">Mankirt Aulakh</div>
+                        <div class="d">Artist</div>
+                    </div>
+                    <div class="gane">
+                        <div class="dil gh"><img class="i" aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67616100005174cda5c51d32f64e382ba23881" alt="Jordan Sandhu" class="mMx2LUixlnN_Fu45JpFB CmkY1Ag0tJDfnFXbGgju _EShSNaBK1wUIaZQFJJQ ta4ePOlmGXjBYPTd90lh Yn2Ei5QZn19gria6LjZj" srcset="https://i.scdn.co/image/ab67616100005174cda5c51d32f64e382ba23881 160w, https://i.scdn.co/image/ab67616100005174cda5c51d32f64e382ba23881 320w, https://i.scdn.co/image/ab6761610000e5ebcda5c51d32f64e382ba23881 320w, https://i.scdn.co/image/ab6761610000e5ebcda5c51d32f64e382ba23881 640w" sizes="(min-width: 1280px) 232px, 192px">  </div>
+                        <div class="t">Jordan Sandhu</div>
+                        <div class="d">Artist</div>
+                    </div>
+                    <div class="gane">
+                        <div class="dil gh"><img class="i" aria-hidden="true" draggable="false" loading="eager" src="https://i.scdn.co/image/ab6761610000101ff5e38e8b949510567aaf9e75" data-testid="entity-image" alt="Jassie Gill" class="mMx2LUixlnN_Fu45JpFB iJp40IxKg6emF6KYJ414 Yn2Ei5QZn19gria6LjZj"> </div>
+                        <div class="t">Jassie Gill</div>
+                        <div class="d">Artist</div>
+                    </div>
+                    <div class="gane">
+                        <div class="dil gh"><img  class="i" aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67616d00001e02b1b18ed6ec161bdd25cc8bcf" alt="Happiness" class="mMx2LUixlnN_Fu45JpFB CmkY1Ag0tJDfnFXbGgju _EShSNaBK1wUIaZQFJJQ Yn2Ei5QZn19gria6LjZj" srcset="https://i.scdn.co/image/ab67616d00001e02b1b18ed6ec161bdd25cc8bcf 150w, https://i.scdn.co/image/ab67616d00001e02b1b18ed6ec161bdd25cc8bcf 300w, https://i.scdn.co/image/ab67616d0000b273b1b18ed6ec161bdd25cc8bcf 320w, https://i.scdn.co/image/ab67616d0000b273b1b18ed6ec161bdd25cc8bcf 640w" sizes="(min-width: 1280px) 232px, 192px"></div>
+                        <div class="t">Ammy Virk</div>
+                        <div class="d">Artist</div>
+                    </div>
+                    <div class="gane">
+                        <div class="dil gh "><img class="i" aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67616d00001e022bb04c3dbee7cef246a22801" alt="Over the Moon" class="mMx2LUixlnN_Fu45JpFB CmkY1Ag0tJDfnFXbGgju _EShSNaBK1wUIaZQFJJQ Yn2Ei5QZn19gria6LjZj" srcset="https://i.scdn.co/image/ab67616d00001e022bb04c3dbee7cef246a22801 150w, https://i.scdn.co/image/ab67616d00001e022bb04c3dbee7cef246a22801 300w, https://i.scdn.co/image/ab67616d0000b2732bb04c3dbee7cef246a22801 320w, https://i.scdn.co/image/ab67616d0000b2732bb04c3dbee7cef246a22801 640w" sizes="(min-width: 1280px) 232px, 192px"> </div>
+                        <div class="t">Ranjit Bawa</div>
+                        <div class="d">Artist</div>
+                    </div>
+                    <div class="gane">
+                        <div class="dil gh"><img class="i" aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67616d00001e024567d391e52ba69519d56cfb" alt="Internet" class="mMx2LUixlnN_Fu45JpFB CmkY1Ag0tJDfnFXbGgju _EShSNaBK1wUIaZQFJJQ Yn2Ei5QZn19gria6LjZj" srcset="https://i.scdn.co/image/ab67616d00001e024567d391e52ba69519d56cfb 150w, https://i.scdn.co/image/ab67616d00001e024567d391e52ba69519d56cfb 300w, https://i.scdn.co/image/ab67616d0000b2734567d391e52ba69519d56cfb 320w, https://i.scdn.co/image/ab67616d0000b2734567d391e52ba69519d56cfb 640w" sizes="(min-width: 1280px) 232px, 192px"></div>
+                        <div class="t">Satinder Sartaaj</div>
+                        <div class="d">Artist</div>
+                    </div>
+                    <div class="gane">
+                        <div class="dil gh"><img class="i" aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67616d00001e022fdb160f7d2e39cb4c312423" alt="Oscar (Lofi Mix)" class="mMx2LUixlnN_Fu45JpFB CmkY1Ag0tJDfnFXbGgju _EShSNaBK1wUIaZQFJJQ Yn2Ei5QZn19gria6LjZj" srcset="https://i.scdn.co/image/ab67616d00001e022fdb160f7d2e39cb4c312423 150w, https://i.scdn.co/image/ab67616d00001e022fdb160f7d2e39cb4c312423 300w, https://i.scdn.co/image/ab67616d0000b2732fdb160f7d2e39cb4c312423 320w, https://i.scdn.co/image/ab67616d0000b2732fdb160f7d2e39cb4c312423 640w" sizes="(min-width: 1280px) 232px, 192px"> </div>
+                        <div class="t">Gippy Grewal</div>
+                        <div class="d">Artist</div>
+                    </div>
+                    <div class="gane">
+                        <div class="dil gh"><img class="i" aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab676161000051746d7d243b5edac905229457c0" alt="Babbal Rai" class="mMx2LUixlnN_Fu45JpFB CmkY1Ag0tJDfnFXbGgju _EShSNaBK1wUIaZQFJJQ ta4ePOlmGXjBYPTd90lh Yn2Ei5QZn19gria6LjZj" srcset="https://i.scdn.co/image/ab676161000051746d7d243b5edac905229457c0 160w, https://i.scdn.co/image/ab676161000051746d7d243b5edac905229457c0 320w, https://i.scdn.co/image/ab6761610000e5eb6d7d243b5edac905229457c0 320w, https://i.scdn.co/image/ab6761610000e5eb6d7d243b5edac905229457c0 640w" sizes="(min-width: 1280px) 232px, 192px"> </div>
+                        <div class="t">Babbel Rai</div>
+                        <div class="d">Artist</div>
+                    </div>
+                    <div class="gane">
+                        <div class="dil gh"><img class="i" aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67616d00001e0259d7aef0366c109616b0e51f" alt="Khushiyan Hi Vandiyan" class="mMx2LUixlnN_Fu45JpFB CmkY1Ag0tJDfnFXbGgju _EShSNaBK1wUIaZQFJJQ Yn2Ei5QZn19gria6LjZj" srcset="https://i.scdn.co/image/ab67616d00001e0259d7aef0366c109616b0e51f 150w, https://i.scdn.co/image/ab67616d00001e0259d7aef0366c109616b0e51f 300w, https://i.scdn.co/image/ab67616d0000b27359d7aef0366c109616b0e51f 320w, https://i.scdn.co/image/ab67616d0000b27359d7aef0366c109616b0e51f 640w" sizes="(min-width: 1280px) 232px, 192px"></div>
+                        <div class="t">Kulwinder Billa</div>
+                        <div class="d">Artist</div>
+                    </div>
+                    <div class="gane">
+                        <div class="dil gh"><img class="i" aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67616d00001e02dde65cc72049de57814cfbed" alt="Roshan Prince" class="mMx2LUixlnN_Fu45JpFB CmkY1Ag0tJDfnFXbGgju _EShSNaBK1wUIaZQFJJQ ta4ePOlmGXjBYPTd90lh Yn2Ei5QZn19gria6LjZj" srcset="https://i.scdn.co/image/ab67616d00001e02dde65cc72049de57814cfbed 150w, https://i.scdn.co/image/ab67616d00001e02dde65cc72049de57814cfbed 300w, https://i.scdn.co/image/ab67616d0000b273dde65cc72049de57814cfbed 320w, https://i.scdn.co/image/ab67616d0000b273dde65cc72049de57814cfbed 640w" sizes="(min-width: 1280px) 232px, 192px">  </div>
+                        <div class="t">Roshan Prince</div>
+                        <div class="d">Artist</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+         <div class="main" id="main">
+
+            <div class="mnav search_div_off home_button_on playlist_button_off">
+                    <div class="mnav1">
+                    <div class="arrow">
+                        <button class="ba"><svg class="icon2" role="img" aria-hidden="true" class="Svg-sc-ytk21e-0 cAMMLk IYDlXmBmmUKHveMzIPCF" viewBox="0 0 16 16"><path d="M11.03.47a.75.75 0 0 1 0 1.06L4.56 8l6.47 6.47a.75.75 0 1 1-1.06 1.06L2.44 8 9.97.47a.75.75 0 0 1 1.06 0z"></path></svg></button>
+                        <button class="ba"><svg class="icon2" role="img" aria-hidden="true" class="Svg-sc-ytk21e-0 cAMMLk IYDlXmBmmUKHveMzIPCF" viewBox="0 0 16 16"><path d="M4.97.47a.75.75 0 0 0 0 1.06L11.44 8l-6.47 6.47a.75.75 0 1 0 1.06 1.06L13.56 8 6.03.47a.75.75 0 0 0-1.06 0z"></path></svg></button>
+                    </div>
+                    <div class="profile">
+                        <button class="explore">Explore Premium</button>
+                        <button class="install">Install app</button>
+                        <button id="bell"><svg class="icon2" role="img" aria-hidden="true" viewBox="0 0 16 16" class="Svg-sc-ytk21e-0 dYnaPI"><path d="M8 1.5a4 4 0 0 0-4 4v3.27a.75.75 0 0 1-.1.373L2.255 12h11.49L12.1 9.142a.75.75 0 0 1-.1-.374V5.5a4 4 0 0 0-4-4zm-5.5 4a5.5 5.5 0 0 1 11 0v3.067l2.193 3.809a.75.75 0 0 1-.65 1.124H10.5a2.5 2.5 0 0 1-5 0H.957a.75.75 0 0 1-.65-1.124L2.5 8.569V5.5zm4.5 8a1 1 0 1 0 2 0H7z"></path></svg></button>
+                        <button id="k">K</button> 
+                    </div>
+                </div>
+                <div class="mnav2">
+                    <button id="all">All</button>
+                    <button id="muc">Music</button>
+                    <button id="pod">Podcasts</button>
+                </div>
+            </div>
+            <div class="mmain search_div_off home_button_on playlist_button_off">
+                <div class="mmain1">
+                    <div class="ganne" >
+                        <img class="kumar"aria-hidden="false" draggable="false" loading="lazy" src="https://seed-mix-image.spotifycdn.com/v6/img/artist/5r3wPya2PpeTTsXsGhQU8O/en/default" data-testid="shortcut-image" alt="" class="mMx2LUixlnN_Fu45JpFB WWDxafTPs4AgThdcX5jN Yn2Ei5QZn19gria6LjZj">
+                        <h4>Shubh Mix</h4>
+                        <div class="chotu_jugad"><button class="chotu_jugad_button"><svg class="chotu_jugad_button_ka_play" data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 24 24" class="Svg-sc-ytk21e-0 bneLcE"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg></button></div>
+                    </div>
+                    <div class="ganne" >
+                        <img class="kumar" aria-hidden="false" draggable="false" loading="lazy" src="https://seed-mix-image.spotifycdn.com/v6/img/artist/42F0wzEqb8LFJDlQtvXSbK/en/default" data-testid="shortcut-image" alt="" class="mMx2LUixlnN_Fu45JpFB WWDxafTPs4AgThdcX5jN Yn2Ei5QZn19gria6LjZj">
+                        <h4>Western Penduz Mix</h4>
+                        <div id="jugu1"class="chotu_jugad"><button class="chotu_jugad_button"><svg class="chotu_jugad_button_ka_play" data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 24 24" class="Svg-sc-ytk21e-0 bneLcE"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg></button></div>
+
+                    </div>
+                    <div class="ganne">
+                        <img class="kumar" aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67616d0000b273a60e15441493b2368f002ab6" data-testid="shortcut-image" alt="" class="mMx2LUixlnN_Fu45JpFB WWDxafTPs4AgThdcX5jN Yn2Ei5QZn19gria6LjZj">
+                        <h4>Dilpreet Dhillon</h4>
+                        <div id="jugu2"class="chotu_jugad"><button class="chotu_jugad_button"><svg class="chotu_jugad_button_ka_play" data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 24 24" class="Svg-sc-ytk21e-0 bneLcE"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg></button></div>
+
+                    </div>
+                    <div class="ganne" >
+                        <img class="kumar" aria-hidden="false" draggable="false" loading="lazy" src="https://seed-mix-image.spotifycdn.com/v6/img/artist/6DARBhWbfcS9E4yJzcliqQ/en/default" data-testid="shortcut-image" alt="" class="mMx2LUixlnN_Fu45JpFB WWDxafTPs4AgThdcX5jN Yn2Ei5QZn19gria6LjZj">
+                        <h4>Karan Aujla Mix</h4>
+                        <div id="jugu3"class="chotu_jugad"><button class="chotu_jugad_button"><svg class="chotu_jugad_button_ka_play" data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 24 24" class="Svg-sc-ytk21e-0 bneLcE"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg></button></div>
+
+                    </div>
+                    <div class="ganne">
+                        <img class="kumar" aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab6761610000e5ebcdf2bc77aa3f4676bb750b49" data-testid="shortcut-image" alt="" class="mMx2LUixlnN_Fu45JpFB WWDxafTPs4AgThdcX5jN Yn2Ei5QZn19gria6LjZj">
+                        <h4>Tarsem Jasser</h4>
+                        <div id="jugu4"class="chotu_jugad"><button class="chotu_jugad_button"><svg class="chotu_jugad_button_ka_play" data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 24 24" class="Svg-sc-ytk21e-0 bneLcE"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg></button></div>
+
+                    </div>
+                    <div class="ganne">
+                        <img class="kumar" aria-hidden="false" draggable="false" loading="lazy" src="https://seeded-session-images.scdn.co/v2/img/122/secondary/artist/6DARBhWbfcS9E4yJzcliqQ/en" data-testid="shortcut-image" alt="" class="mMx2LUixlnN_Fu45JpFB WWDxafTPs4AgThdcX5jN Yn2Ei5QZn19gria6LjZj">
+                        <h4>Karan Aujla Radio</h4>
+                        <div id="jugu5"class="chotu_jugad"><button class="chotu_jugad_button"><svg class="chotu_jugad_button_ka_play" data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 24 24" class="Svg-sc-ytk21e-0 bneLcE"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg></button></div>
+
+                    </div>
+                    <h2 class="h">Made for Khushalgoyal</h2>
+                </div>
+                <div class="mmain2">
+                    <div class="card">
+                        <div class="jugad"><button class="jugadi_button"><svg class="jugadi_button_ka_play" data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 24 24" class="Svg-sc-ytk21e-0 bneLcE"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg></button></div>
+                        <img class="cardphoto" draggable="false" loading="lazy" src="https://dailymix-images.scdn.co/v2/img/ab6761610000e5ebcdf2bc77aa3f4676bb750b49/1/en/default" data-testid="card-image" alt="" class="mMx2LUixlnN_Fu45JpFB SKJSok3LfyedjZjujmFt Yn2Ei5QZn19gria6LjZj">
+                        
+                        <div class="name"><h3>Daily Mix 1</h3></div>
+                        
+                        <div class="decs">Tarsem Jassar, Tippu Sultan, Satbir Aujla and more</div>
+                    </div>
+                    <div class="card">
+                        <div class="jugad"><button class="jugadi_button"><svg class="jugadi_button_ka_play" data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 24 24" class="Svg-sc-ytk21e-0 bneLcE"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg></button></div>
+
+                        <img class="cardphoto" draggable="false" loading="lazy" src="https://dailymix-images.scdn.co/v2/img/ab6761610000e5ebf5e38e8b949510567aaf9e75/2/en/default" data-testid="card-image" alt="" class="mMx2LUixlnN_Fu45JpFB SKJSok3LfyedjZjujmFt Yn2Ei5QZn19gria6LjZj">
+                        <div class="name"><h3>Daily Mix 2</h3></div>
+                        <div class="decs">Jassie Gill, Sidhu Moose Wala, Shubh and more</div>
+                    </div>
+                    <div class="card">
+                        <div class="jugad"><button class="jugadi_button"><svg class="jugadi_button_ka_play" data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 24 24" class="Svg-sc-ytk21e-0 bneLcE"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg></button></div>
+
+                        <img class="cardphoto" draggable="false" loading="lazy" src="https://dailymix-images.scdn.co/v2/img/ab6761610000e5ebe34fad78221a2cb31da57946/3/en/default" data-testid="card-image" alt="" class="mMx2LUixlnN_Fu45JpFB SKJSok3LfyedjZjujmFt Yn2Ei5QZn19gria6LjZj">
+                        <div class="name"><h3>Daily Mix 3</h3></div>
+                        <div class="decs">Sachet Tandon, Neha Kakkar, Alia Bhatt and...</div>
+                    </div>
+                    <div class="card">
+                        <div class="jugad"><button class="jugadi_button"><svg class="jugadi_button_ka_play" data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 24 24" class="Svg-sc-ytk21e-0 bneLcE"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg></button></div>
+
+                        <img  class="cardphoto" draggable="false" loading="lazy" src="https://dailymix-images.scdn.co/v2/img/ab6761610000e5eb2feffce3170e287e2c143dc7/4/en/default" data-testid="card-image" alt="" class="mMx2LUixlnN_Fu45JpFB SKJSok3LfyedjZjujmFt Yn2Ei5QZn19gria6LjZj">
+                        <div class="name"><h3>Daily Mix 4</h3></div>
+                        <div class="decs">Hansraj Raghuwanshi, Siddharth Mohan, Jeetu...</div>
+                    </div>
+                    <div class="card">
+                        <div class="jugad"><button class="jugadi_button"><svg class="jugadi_button_ka_play" data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 24 24" class="Svg-sc-ytk21e-0 bneLcE"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg></button></div>
+
+                        <img class="cardphoto" draggable="false" loading="lazy" src="https://dailymix-images.scdn.co/v2/img/ab6761610000e5eb9c22e0ff8c09b0128f67393e/5/en/default" data-testid="card-image" alt="" class="mMx2LUixlnN_Fu45JpFB SKJSok3LfyedjZjujmFt Yn2Ei5QZn19gria6LjZj">
+                        <div class="name"><h3>Daily Mix 5</h3></div>
+                        <div class="decs">Anuradha Paudwal, Shankar-Ehsaan-Loy, Atif...</div>
+                    </div>
+                    <h2 class="h j">Jump back in</h2>
+                    <div class="card">
+                        <div class="jugad"><button class="jugadi_button"><svg class="jugadi_button_ka_play" data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 24 24" class="Svg-sc-ytk21e-0 bneLcE"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg></button></div>
+
+                        <img class="cardphoto"aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67616d00001e02bea812e03c07b505e759b7e2" data-testid="card-image" alt="" class="mMx2LUixlnN_Fu45JpFB SKJSok3LfyedjZjujmFt Yn2Ei5QZn19gria6LjZj">
+                        <div class="name"><h3>Daily Mix 1</h3></div>
+                        <div class="decs">Tarsem Jassar, Tippu Sultan, Satbir Aujla and more</div>
+                    </div>
+                    <div class="card">
+                        <div class="jugad"><button class="jugadi_button"><svg class="jugadi_button_ka_play" data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 24 24" class="Svg-sc-ytk21e-0 bneLcE"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg></button></div>
+
+                        <img class="cardphoto" aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67616d00001e020ebe335aac0fd53181fdb103" data-testid="card-image" alt="" class="mMx2LUixlnN_Fu45JpFB SKJSok3LfyedjZjujmFt Yn2Ei5QZn19gria6LjZj">
+                        <div class="name"><h3>Daily Mix 2</h3></div>
+                        <div class="decs">Jassie Gill, Sidhu Moose Wala, Shubh and more</div>
+                    </div>
+                    <div class="card">
+                        <div class="jugad"><button class="jugadi_button"><svg class="jugadi_button_ka_play" data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 24 24" class="Svg-sc-ytk21e-0 bneLcE"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg></button></div>
+
+                        <img   class="cardphoto" aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67616d00001e02a411a01c132c3c880ab1c6ce" data-testid="card-image" alt="" class="mMx2LUixlnN_Fu45JpFB SKJSok3LfyedjZjujmFt Yn2Ei5QZn19gria6LjZj">
+                        <div class="name"><h3>Daily Mix 3</h3></div>
+                        <div class="decs">Sachet Tandon, Neha Kakkar, Alia Bhatt and...</div>
+                    </div>
+                    <div class="card">
+                        <div class="jugad"><button class="jugadi_button"><svg class="jugadi_button_ka_play" data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 24 24" class="Svg-sc-ytk21e-0 bneLcE"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg></button></div>
+
+                        <img class="cardphoto" aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67616d00001e02b15ab5639a9315e1a847865b" data-testid="card-image" alt="" class="mMx2LUixlnN_Fu45JpFB SKJSok3LfyedjZjujmFt Yn2Ei5QZn19gria6LjZj">
+                        <div class="name"><h3>Daily Mix 4</h3></div>
+                        <div class="decs">Hansraj Raghuwanshi, Siddharth Mohan, Jeetu...</div>
+                    </div>
+                    <div class="card">
+                        <div class="jugad"><button class="jugadi_button"><svg class="jugadi_button_ka_play" data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 24 24" class="Svg-sc-ytk21e-0 bneLcE"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg></button></div>
+
+                        <img class="cardphoto" aria-hidden="false" draggable="false" loading="eager" src="https://seed-mix-image.spotifycdn.com/v6/img/artist/6DARBhWbfcS9E4yJzcliqQ/en/default" alt="Karan Aujla Mix" class="mMx2LUixlnN_Fu45JpFB CmkY1Ag0tJDfnFXbGgju _EShSNaBK1wUIaZQFJJQ Yn2Ei5QZn19gria6LjZj" sizes="(min-width: 1280px) 232px, 192px">
+                        <div class="name"><h3>Daily Mix 5</h3></div>
+                        <div class="decs">Anuradha Paudwal, Shankar-Ehsaan-Loy, Atif...</div>
+                    </div>
+                    <h2 class="h j">Recommended radio</h2>
+                    <div class="card">
+                        <div class="jugad"><button class="jugadi_button"><svg class="jugadi_button_ka_play" data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 24 24" class="Svg-sc-ytk21e-0 bneLcE"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg></button></div>
+
+                        <img class="cardphoto" aria-hidden="false" draggable="false" loading="eager" src="https://seeded-session-images.scdn.co/v2/img/122/secondary/artist/3OQRPFFS3OsltFjFAXu1kE/en" alt="Parmish Verma Radio" class="mMx2LUixlnN_Fu45JpFB CmkY1Ag0tJDfnFXbGgju _EShSNaBK1wUIaZQFJJQ Yn2Ei5QZn19gria6LjZj" sizes="(min-width: 1280px) 232px, 192px">
+                        <div class="name"><h3>Daily Mix 1</h3></div>
+                        <div class="decs">Tarsem Jassar, Tippu Sultan, Satbir Aujla and more</div>
+                    </div>
+                    <div class="card">
+                        <div class="jugad"><button class="jugadi_button"><svg class="jugadi_button_ka_play" data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 24 24" class="Svg-sc-ytk21e-0 bneLcE"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg></button></div>
+
+                        <img  class="cardphoto"  aria-hidden="false" draggable="false" loading="eager" src="https://seeded-session-images.scdn.co/v2/img/122/secondary/artist/5kvGYraWFlXs2Jbt1Kphn8/en" alt="Gippy Grewal Radio" class="mMx2LUixlnN_Fu45JpFB CmkY1Ag0tJDfnFXbGgju _EShSNaBK1wUIaZQFJJQ Yn2Ei5QZn19gria6LjZj" sizes="(min-width: 1280px) 232px, 192px">
+                        <div  class="name"><h3>Daily Mix 2</h3></div>
+                        <div class="decs">Jassie Gill, Sidhu Moose Wala, Shubh and more</div>
+                    </div>
+                    <div class="card">
+                        <div class="jugad"><button class="jugadi_button"><svg class="jugadi_button_ka_play" data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 24 24" class="Svg-sc-ytk21e-0 bneLcE"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg></button></div>
+
+                        <img class="cardphoto" aria-hidden="false" draggable="false" loading="eager" src="https://seeded-session-images.scdn.co/v2/img/122/secondary/artist/4rgw8A5vcYinpZLDKHrEdV/en" alt="Satinder Sartaaj Radio" class="mMx2LUixlnN_Fu45JpFB CmkY1Ag0tJDfnFXbGgju _EShSNaBK1wUIaZQFJJQ Yn2Ei5QZn19gria6LjZj" sizes="(min-width: 1280px) 232px, 192px">
+                        
+                        <div class="name"><h3>Daily Mix 3</h3></div>
+                        <div class="decs">Sachet Tandon, Neha Kakkar, Alia Bhatt and...</div>
+                    </div>
+                    <div class="card">
+                        <div class="jugad"><button class="jugadi_button"><svg class="jugadi_button_ka_play" data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 24 24" class="Svg-sc-ytk21e-0 bneLcE"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg></button></div>
+
+                        <img class="cardphoto" aria-hidden="false" draggable="false" loading="eager" src="https://seeded-session-images.scdn.co/v2/img/122/secondary/artist/3TozxPbDes76aGFdfv7PMv/en" alt="Jordan Sandhu Radio" class="mMx2LUixlnN_Fu45JpFB CmkY1Ag0tJDfnFXbGgju _EShSNaBK1wUIaZQFJJQ Yn2Ei5QZn19gria6LjZj" sizes="(min-width: 1280px) 232px, 192px">
+                        <div class="name"><h3>Daily Mix 4</h3></div>
+                        <div class="decs">Hansraj Raghuwanshi, Siddharth Mohan, Jeetu...</div>
+                    </div>
+                    <div class="card">
+                        <div class="jugad"><button class="jugadi_button"><svg class="jugadi_button_ka_play" data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 24 24" class="Svg-sc-ytk21e-0 bneLcE"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg></button></div>
+
+                        <img class="cardphoto" aria-hidden="false" draggable="false" loading="eager" src="https://seeded-session-images.scdn.co/v2/img/122/secondary/artist/3uHUKCspaCzAab9A3LlGAr/en" alt="Mankirt Aulakh Radio" class="mMx2LUixlnN_Fu45JpFB CmkY1Ag0tJDfnFXbGgju _EShSNaBK1wUIaZQFJJQ Yn2Ei5QZn19gria6LjZj" sizes="(min-width: 1280px) 232px, 192px">
+                        <div class="name"><h3>Daily Mix 5</h3></div>
+                        <div class="decs">Anuradha Paudwal, Shankar-Ehsaan-Loy, Atif...</div>
+                    </div>
+                    <h2 class="h j">Your top mixes</h2>
+                    <div class="card">
+                        <div class="jugad"><button class="jugadi_button"><svg class="jugadi_button_ka_play" data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 24 24" class="Svg-sc-ytk21e-0 bneLcE"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg></button></div>
+
+                        <img class="cardphoto" aria-hidden="false" draggable="false" loading="eager" src="https://seed-mix-image.spotifycdn.com/v6/img/two_thousands/24BYRlsS8uIO4jA71mJ4Js/en/default" alt="2000s Mix" class="mMx2LUixlnN_Fu45JpFB CmkY1Ag0tJDfnFXbGgju _EShSNaBK1wUIaZQFJJQ Yn2Ei5QZn19gria6LjZj" sizes="(min-width: 1280px) 232px, 192px">
+                        <div class="name"><h3>Daily Mix 1</h3></div>
+                        <div class="decs">Tarsem Jassar, Tippu Sultan, Satbir Aujla and more</div>
+                    </div>
+                    <div class="card">
+                        <div class="jugad"><button class="jugadi_button"><svg class="jugadi_button_ka_play" data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 24 24" class="Svg-sc-ytk21e-0 bneLcE"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg></button></div>
+
+                        <img class="cardphoto" aria-hidden="false" draggable="false" loading="eager" src="https://seed-mix-image.spotifycdn.com/v6/img/artist/5CGQa62CAweD76eHlDmp1m/en/default" alt="Dilpreet Dhillon Mix" class="mMx2LUixlnN_Fu45JpFB CmkY1Ag0tJDfnFXbGgju _EShSNaBK1wUIaZQFJJQ Yn2Ei5QZn19gria6LjZj" sizes="(min-width: 1280px) 232px, 192px">
+                        <div class="name"><h3>Daily Mix 2</h3></div>
+                        <div class="decs">Jassie Gill, Sidhu Moose Wala, Shubh and more</div>
+                    </div>
+                    <div class="card">
+                        <div class="jugad"><button class="jugadi_button"><svg class="jugadi_button_ka_play" data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 24 24" class="Svg-sc-ytk21e-0 bneLcE"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg></button></div>
+
+                        <img class="cardphoto" aria-hidden="false" draggable="false" loading="eager" src="https://seed-mix-image.spotifycdn.com/v6/img/artist/1x02ug1CLkx7mrQP9FRswh/en/default" alt="Amrinder Gill Mix" class="mMx2LUixlnN_Fu45JpFB CmkY1Ag0tJDfnFXbGgju _EShSNaBK1wUIaZQFJJQ Yn2Ei5QZn19gria6LjZj" sizes="(min-width: 1280px) 232px, 192px">
+                        <div class="name"><h3>Daily Mix 3</h3></div>
+                        <div class="decs">Sachet Tandon, Neha Kakkar, Alia Bhatt and...</div>
+                    </div>
+                    <div class="card">
+                        <div class="jugad"><button class="jugadi_button"><svg class="jugadi_button_ka_play" data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 24 24" class="Svg-sc-ytk21e-0 bneLcE"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg></button></div>
+
+                        <img  class="cardphoto" aria-hidden="false" draggable="false" loading="eager" src="https://seed-mix-image.spotifycdn.com/v6/img/twenty_tens/5DHi2MeoRgAwPE0A0qwRMl/en/default" alt="2010s Mix" class="mMx2LUixlnN_Fu45JpFB CmkY1Ag0tJDfnFXbGgju _EShSNaBK1wUIaZQFJJQ Yn2Ei5QZn19gria6LjZj" sizes="(min-width: 1280px) 232px, 192px">
+                        <div class="name"><h3>Daily Mix 4</h3></div>
+                        <div class="decs">Hansraj Raghuwanshi, Siddharth Mohan, Jeetu...</div>
+                    </div>
+                    <div class="card">
+                        <div class="jugad"><button class="jugadi_button"><svg class="jugadi_button_ka_play" data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 24 24" class="Svg-sc-ytk21e-0 bneLcE"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg></button></div>
+
+                        <img class="cardphoto" aria-hidden="false" draggable="false" loading="eager" src="https://seed-mix-image.spotifycdn.com/v6/img/tamil/1QHr8p3h0ayWLaaYK0X6bi/en/default" alt="Tamil Mix" class="mMx2LUixlnN_Fu45JpFB CmkY1Ag0tJDfnFXbGgju _EShSNaBK1wUIaZQFJJQ Yn2Ei5QZn19gria6LjZj" sizes="(min-width: 1280px) 232px, 192px">
+                        <div class="name"><h3>Daily Mix 5</h3></div>
+                        <div class="decs">Anuradha Paudwal, Shankar-Ehsaan-Loy, Atif...</div>
+                    </div>
+                    <h2 class="h j">India's Best</h2>
+                    <div class="card">
+                        <div class="jugad"><button class="jugadi_button"><svg class="jugadi_button_ka_play" data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 24 24" class="Svg-sc-ytk21e-0 bneLcE"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg></button></div>
+
+                        <img class="cardphoto" aria-hidden="false" draggable="false" loading="eager" src="https://i.scdn.co/image/ab67706f00000002ddf57154858e9b611d983bf1" alt="RADAR India" class="mMx2LUixlnN_Fu45JpFB CmkY1Ag0tJDfnFXbGgju _EShSNaBK1wUIaZQFJJQ Yn2Ei5QZn19gria6LjZj" sizes="(min-width: 1280px) 232px, 192px">
+                        <div class="name"><h3>Daily Mix 1</h3></div>
+                        <div class="decs">Tarsem Jassar, Tippu Sultan, Satbir Aujla and more</div>
+                    </div>
+                    <div class="card">
+                        <div class="jugad"><button class="jugadi_button"><svg class="jugadi_button_ka_play" data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 24 24" class="Svg-sc-ytk21e-0 bneLcE"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg></button></div>
+
+                        <img class="cardphoto" aria-hidden="false" draggable="false" loading="eager" src="https://i.scdn.co/image/ab67706f0000000212c8869395784216af4b5e21" alt="I-Pop Superhits" class="mMx2LUixlnN_Fu45JpFB CmkY1Ag0tJDfnFXbGgju _EShSNaBK1wUIaZQFJJQ Yn2Ei5QZn19gria6LjZj" sizes="(min-width: 1280px) 232px, 192px">
+                        <div class="name"><h3>Daily Mix 2</h3></div>
+                        <div class="decs">Jassie Gill, Sidhu Moose Wala, Shubh and more</div>
+                    </div>
+                    <div class="card">
+                        <div class="jugad"><button class="jugadi_button"><svg class="jugadi_button_ka_play" data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 24 24" class="Svg-sc-ytk21e-0 bneLcE"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg></button></div>
+
+                        <img class="cardphoto" aria-hidden="false" draggable="false" loading="eager" src="https://i.scdn.co/image/ab67706f00000002384abffdd0b9c72207f4fc33" alt="RAP 91" class="mMx2LUixlnN_Fu45JpFB CmkY1Ag0tJDfnFXbGgju _EShSNaBK1wUIaZQFJJQ Yn2Ei5QZn19gria6LjZj" sizes="(min-width: 1280px) 232px, 192px">
+                        <div class="name"><h3>Daily Mix 3</h3></div>
+                        <div class="decs">Sachet Tandon, Neha Kakkar, Alia Bhatt and...</div>
+                    </div>
+                    <div class="card">
+                        <div class="jugad"><button class="jugadi_button"><svg class="jugadi_button_ka_play" data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 24 24" class="Svg-sc-ytk21e-0 bneLcE"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg></button></div>
+
+                        <img class="cardphoto" aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67706f000000020f9071523edb8a48b0e961e2" data-testid="card-image" alt="" class="mMx2LUixlnN_Fu45JpFB SKJSok3LfyedjZjujmFt Yn2Ei5QZn19gria6LjZj">
+                        <div class="name"><h3>Daily Mix 4</h3></div>
+                        <div class="decs">Hansraj Raghuwanshi, Siddharth Mohan, Jeetu...</div>
+                    </div>
+                    <div class="card">
+                        <div class="jugad"><button class="jugadi_button"><svg class="jugadi_button_ka_play" data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 24 24" class="Svg-sc-ytk21e-0 bneLcE"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg></button></div>
+
+                        <img class="cardphoto" aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67706f00000002efcd35fd64a73060bb6605e4" data-testid="card-image" alt="" class="mMx2LUixlnN_Fu45JpFB SKJSok3LfyedjZjujmFt Yn2Ei5QZn19gria6LjZj">
+                        <div class="name"><h3>Daily Mix 5</h3></div>
+                        <div class="decs">Anuradha Paudwal, Shankar-Ehsaan-Loy, Atif...</div>
+                    </div>
+                    <h2 class="h j">Show to try</h2>
+                    <div class="card">
+                        <div class="jugad"><button class="jugadi_button"><svg class="jugadi_button_ka_play" data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 24 24" class="Svg-sc-ytk21e-0 bneLcE"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg></button></div>
+
+                        <img class="cardphoto" aria-hidden="false" draggable="false" loading="eager" src="https://i.scdn.co/image/ab67656300005f1f3c47123181b8fde6268b9bba" alt="SHRIMAD BHAGWADGITA" class="mMx2LUixlnN_Fu45JpFB CmkY1Ag0tJDfnFXbGgju _EShSNaBK1wUIaZQFJJQ Yn2Ei5QZn19gria6LjZj" srcset="https://i.scdn.co/image/ab67656300005f1f3c47123181b8fde6268b9bba 150w, https://i.scdn.co/image/ab67656300005f1f3c47123181b8fde6268b9bba 300w, https://i.scdn.co/image/ab6765630000ba8a3c47123181b8fde6268b9bba 320w, https://i.scdn.co/image/ab6765630000ba8a3c47123181b8fde6268b9bba 640w" sizes="(min-width: 1280px) 232px, 192px">
+                        <div class="name"><h3>Daily Mix 1</h3></div>
+                        <div class="decs">Tarsem Jassar, Tippu Sultan, Satbir Aujla and more</div>
+                    </div>
+                    <div class="card">
+                        <div class="jugad"><button class="jugadi_button"><svg class="jugadi_button_ka_play" data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 24 24" class="Svg-sc-ytk21e-0 bneLcE"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg></button></div>
+
+                        <img class="cardphoto"  aria-hidden="false" draggable="false" loading="eager" src="https://i.scdn.co/image/ab67656300005f1f3a138a936cf0ab42a3ea4d85" alt="Shri krishna Geeta Vani " class="mMx2LUixlnN_Fu45JpFB CmkY1Ag0tJDfnFXbGgju _EShSNaBK1wUIaZQFJJQ Yn2Ei5QZn19gria6LjZj" srcset="https://i.scdn.co/image/ab67656300005f1f3a138a936cf0ab42a3ea4d85 150w, https://i.scdn.co/image/ab67656300005f1f3a138a936cf0ab42a3ea4d85 300w, https://i.scdn.co/image/ab6765630000ba8a3a138a936cf0ab42a3ea4d85 320w, https://i.scdn.co/image/ab6765630000ba8a3a138a936cf0ab42a3ea4d85 640w" sizes="(min-width: 1280px) 232px, 192px">
+                        <div class="name"><h3>Daily Mix 2</h3></div>
+                        <div class="decs">Jassie Gill, Sidhu Moose Wala, Shubh and more</div>
+                    </div>
+                    <div class="card">
+                        <div class="jugad"><button class="jugadi_button"><svg class="jugadi_button_ka_play" data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 24 24" class="Svg-sc-ytk21e-0 bneLcE"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg></button></div>
+
+                        <img class="cardphoto" aria-hidden="false" draggable="false" loading="eager" src="https://i.scdn.co/image/ab67656300005f1f305d1cb60f736ccc8860e7e6" alt="RICH DAD POOR DAD IN HINDI" class="mMx2LUixlnN_Fu45JpFB CmkY1Ag0tJDfnFXbGgju _EShSNaBK1wUIaZQFJJQ Yn2Ei5QZn19gria6LjZj" srcset="https://i.scdn.co/image/ab67656300005f1f305d1cb60f736ccc8860e7e6 150w, https://i.scdn.co/image/ab67656300005f1f305d1cb60f736ccc8860e7e6 300w, https://i.scdn.co/image/ab6765630000ba8a305d1cb60f736ccc8860e7e6 320w, https://i.scdn.co/image/ab6765630000ba8a305d1cb60f736ccc8860e7e6 640w" sizes="(min-width: 1280px) 232px, 192px">
+                        <div class="name"><h3>Daily Mix 3</h3></div>
+                        <div class="decs">Sachet Tandon, Neha Kakkar, Alia Bhatt and...</div>
+                    </div>
+                    <div class="card">
+                        <div class="jugad"><button class="jugadi_button"><svg class="jugadi_button_ka_play" data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 24 24" class="Svg-sc-ytk21e-0 bneLcE"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg></button></div>
+
+                        <img class="cardphoto"  aria-hidden="false" draggable="false" loading="eager" src="https://i.scdn.co/image/ab67656300005f1f2b279d687af38611ea0cd68d" alt="Osho Hindi" class="mMx2LUixlnN_Fu45JpFB CmkY1Ag0tJDfnFXbGgju _EShSNaBK1wUIaZQFJJQ Yn2Ei5QZn19gria6LjZj" srcset="https://i.scdn.co/image/ab67656300005f1f2b279d687af38611ea0cd68d 150w, https://i.scdn.co/image/ab67656300005f1f2b279d687af38611ea0cd68d 300w, https://i.scdn.co/image/ab6765630000ba8a2b279d687af38611ea0cd68d 320w, https://i.scdn.co/image/ab6765630000ba8a2b279d687af38611ea0cd68d 640w" sizes="(min-width: 1280px) 232px, 192px">
+                        <div class="name"><h3>Daily Mix 4</h3></div>
+                        <div class="decs">Hansraj Raghuwanshi, Siddharth Mohan, Jeetu...</div>
+                    </div>
+                    <div class="card">
+                        <div class="jugad"><button class="jugadi_button"><svg class="jugadi_button_ka_play" data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 24 24" class="Svg-sc-ytk21e-0 bneLcE"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg></button></div>
+
+                        <img class="cardphoto"   aria-hidden="false" draggable="false" loading="eager" src="https://i.scdn.co/image/ab67656300005f1f90720124db9007abed22215d" alt="SCARY HORROR STORIES HINDI" class="mMx2LUixlnN_Fu45JpFB CmkY1Ag0tJDfnFXbGgju _EShSNaBK1wUIaZQFJJQ Yn2Ei5QZn19gria6LjZj" srcset="https://i.scdn.co/image/ab67656300005f1f90720124db9007abed22215d 150w, https://i.scdn.co/image/ab67656300005f1f90720124db9007abed22215d 300w, https://i.scdn.co/image/ab6765630000ba8a90720124db9007abed22215d 320w, https://i.scdn.co/image/ab6765630000ba8a90720124db9007abed22215d 640w" sizes="(min-width: 1280px) 232px, 192px">
+                        <div class="name"><h3>Daily Mix 5</h3></div>
+                        <div class="decs">Anuradha Paudwal, Shankar-Ehsaan-Loy, Atif...</div>
+                    </div>
+                    <h2 class="h j">Popular radio</h2>
+                    <div class="card">
+                        <div class="jugad"><button class="jugadi_button"><svg class="jugadi_button_ka_play" data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 24 24" class="Svg-sc-ytk21e-0 bneLcE"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg></button></div>
+
+                        <img class="cardphoto" aria-hidden="false" draggable="false" loading="eager" src="https://seeded-session-images.scdn.co/v2/img/122/secondary/artist/4YRxDV8wJFPHPTeXepOstw/en" alt="Arijit Singh Radio" class="mMx2LUixlnN_Fu45JpFB CmkY1Ag0tJDfnFXbGgju _EShSNaBK1wUIaZQFJJQ Yn2Ei5QZn19gria6LjZj" sizes="(min-width: 1280px) 232px, 192px">
+                        <div class="name"><h3>Arijit Singh Radio</h3></div>
+                        <div class="decs">With Neha Kakkar, Pritam, KK and more</div>
+                    </div>
+                    <div class="card">
+                        <div class="jugad"><button class="jugadi_button"><svg class="jugadi_button_ka_play" data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 24 24" class="Svg-sc-ytk21e-0 bneLcE"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg></button></div>
+
+                        <img  class="cardphoto" aria-hidden="false" draggable="false" loading="eager" src="https://seeded-session-images.scdn.co/v2/img/122/secondary/artist/4PULA4EFzYTrxYvOVlwpiQ/en" alt="Sidhu Moose Wala Radio" class="mMx2LUixlnN_Fu45JpFB CmkY1Ag0tJDfnFXbGgju _EShSNaBK1wUIaZQFJJQ Yn2Ei5QZn19gria6LjZj" sizes="(min-width: 1280px) 232px, 192px">
+                        <div class="name"><h3>Sidhu Moose Wala ...</h3></div>
+                        <div class="decs">With Ammy Virk, Amrit Maan, Karan Aujla and...</div>
+                    </div>
+                    <div class="card">
+                        <div class="jugad"><button class="jugadi_button"><svg class="jugadi_button_ka_play" data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 24 24" class="Svg-sc-ytk21e-0 bneLcE"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg></button></div>
+
+                        <img  class="cardphoto" aria-hidden="false" draggable="false" loading="eager" src="https://seeded-session-images.scdn.co/v2/img/122/secondary/artist/4K6blSRoklNdpw4mzLxwfn/en" alt="Kumar Sanu Radio" class="mMx2LUixlnN_Fu45JpFB CmkY1Ag0tJDfnFXbGgju _EShSNaBK1wUIaZQFJJQ Yn2Ei5QZn19gria6LjZj" sizes="(min-width: 1280px) 232px, 192px">
+                        <div class="name"><h3>Kumar Sanu Radio</h3></div>
+                        <div class="decs">With Udit Narayan, Alka Yagnik, Anuradha...</div>
+                    </div>
+                    <div class="card">
+                        <div class="jugad"><button class="jugadi_button"><svg class="jugadi_button_ka_play" data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 24 24" class="Svg-sc-ytk21e-0 bneLcE"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg></button></div>
+
+                        <img class="cardphoto"aria-hidden="false" draggable="false" loading="eager" src="https://seeded-session-images.scdn.co/v2/img/122/secondary/artist/2FKWNmZWDBZR4dE5KX4plR/en" alt="Diljit Dosanjh Radio" class="mMx2LUixlnN_Fu45JpFB CmkY1Ag0tJDfnFXbGgju _EShSNaBK1wUIaZQFJJQ Yn2Ei5QZn19gria6LjZj" sizes="(min-width: 1280px) 232px, 192px">
+                        <div class="name"><h3>Diljit Dosanjh Radio</h3></div>
+                        <div class="decs">With Garry Sandhu, Ranjit Bawa, Amrinder..</div>
+                    </div>
+                    <div class="card">
+                        <div class="jugad"><button class="jugadi_button"><svg class="jugadi_button_ka_play" data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 24 24" class="Svg-sc-ytk21e-0 bneLcE"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg></button></div>
+
+                        <img class="cardphoto" aria-hidden="false" draggable="false" loading="eager" src="https://seeded-session-images.scdn.co/v2/img/122/secondary/artist/5r3wPya2PpeTTsXsGhQU8O/en" alt="Shubh Radio" class="mMx2LUixlnN_Fu45JpFB CmkY1Ag0tJDfnFXbGgju _EShSNaBK1wUIaZQFJJQ Yn2Ei5QZn19gria6LjZj" sizes="(min-width: 1280px) 232px, 192px">
+                        <div class="name"><h3>Shubh Radio</h3></div>
+                        <div class="decs">With Gurinder Gill, AP Dhillon, Ikky and more</div>
+                    </div>
+                    <h2 class="h j">Spotify original podcasts</h2>
+                    <div class="card">
+                        <div class="jugad"><button class="jugadi_button"><svg class="jugadi_button_ka_play" data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 24 24" class="Svg-sc-ytk21e-0 bneLcE"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg></button></div>
+
+                        <img class="cardphoto" aria-hidden="false" draggable="false" loading="eager" src="https://i.scdn.co/image/ab67656300005f1f9114d741247e2d26a7b48b6f" alt="Shri Krishna Leela (Hindi Podcast)" class="mMx2LUixlnN_Fu45JpFB CmkY1Ag0tJDfnFXbGgju _EShSNaBK1wUIaZQFJJQ Yn2Ei5QZn19gria6LjZj" srcset="https://i.scdn.co/image/ab67656300005f1f9114d741247e2d26a7b48b6f 150w, https://i.scdn.co/image/ab67656300005f1f9114d741247e2d26a7b48b6f 300w, https://i.scdn.co/image/ab6765630000ba8a9114d741247e2d26a7b48b6f 320w, https://i.scdn.co/image/ab6765630000ba8a9114d741247e2d26a7b48b6f 640w" sizes="(min-width: 1280px) 232px, 192px">
+                        <div class="name"><h3>Shri Krishna Leela (..</h3></div>
+                        <div class="decs">Spotify Studios</div>
+                    </div>
+                    <div class="card">
+                        <div class="jugad"><button class="jugadi_button"><svg class="jugadi_button_ka_play" data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 24 24" class="Svg-sc-ytk21e-0 bneLcE"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg></button></div>
+
+                        <img  class="cardphoto" aria-hidden="false" draggable="false" loading="eager" src="https://i.scdn.co/image/ab67656300005f1fde3404901270d81ee3bbc408" alt="The Ranveer Show" class="mMx2LUixlnN_Fu45JpFB CmkY1Ag0tJDfnFXbGgju _EShSNaBK1wUIaZQFJJQ Yn2Ei5QZn19gria6LjZj" srcset="https://i.scdn.co/image/ab67656300005f1fde3404901270d81ee3bbc408 150w, https://i.scdn.co/image/ab67656300005f1fde3404901270d81ee3bbc408 300w, https://i.scdn.co/image/ab6765630000ba8ade3404901270d81ee3bbc408 320w, https://i.scdn.co/image/ab6765630000ba8ade3404901270d81ee3bbc408 640w" sizes="(min-width: 1280px) 232px, 192px">
+                        <div class="name"><h3>The Ranveer Show</h3></div>
+                        <div class="decs">BeerBiceps</div>
+                    </div>
+                    <div class="card">
+                        <div class="jugad"><button class="jugadi_button"><svg class="jugadi_button_ka_play" data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 24 24" class="Svg-sc-ytk21e-0 bneLcE"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg></button></div>
+
+                        <img class="cardphoto" aria-hidden="false" draggable="false" loading="eager" src="https://i.scdn.co/image/ab67656300005f1f3c0cd1efd66f78f05f13632a" alt="True Story Bro! with Triggered Insaan" class="mMx2LUixlnN_Fu45JpFB CmkY1Ag0tJDfnFXbGgju _EShSNaBK1wUIaZQFJJQ Yn2Ei5QZn19gria6LjZj" srcset="https://i.scdn.co/image/ab67656300005f1f3c0cd1efd66f78f05f13632a 150w, https://i.scdn.co/image/ab67656300005f1f3c0cd1efd66f78f05f13632a 300w, https://i.scdn.co/image/ab6765630000ba8a3c0cd1efd66f78f05f13632a 320w, https://i.scdn.co/image/ab6765630000ba8a3c0cd1efd66f78f05f13632a 640w" sizes="(min-width: 1280px) 232px, 192px">
+                        <div class="name"><h3>True Story Bro! wit...</h3></div>
+                        <div class="decs">Spotify</div>
+                    </div>
+                    <div class="card">
+                        <div class="jugad"><button class="jugadi_button"><svg class="jugadi_button_ka_play" data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 24 24" class="Svg-sc-ytk21e-0 bneLcE"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg></button></div>
+
+                        <img class="cardphoto" aria-hidden="false" draggable="false" loading="eager" src="https://i.scdn.co/image/ab67656300005f1fd25f84e9f3884ce237cc741c" alt="The Horror Show by Khooni Monday - Scary Stories in Hindi" class="mMx2LUixlnN_Fu45JpFB CmkY1Ag0tJDfnFXbGgju _EShSNaBK1wUIaZQFJJQ Yn2Ei5QZn19gria6LjZj" srcset="https://i.scdn.co/image/ab67656300005f1fd25f84e9f3884ce237cc741c 150w, https://i.scdn.co/image/ab67656300005f1fd25f84e9f3884ce237cc741c 300w, https://i.scdn.co/image/ab6765630000ba8ad25f84e9f3884ce237cc741c 320w, https://i.scdn.co/image/ab6765630000ba8ad25f84e9f3884ce237cc741c 640w" sizes="(min-width: 1280px) 232px, 192px">
+                        <div class="name"><h3>The Horror Show b...</h3></div>
+                        <div class="decs">TMV Studios</div>
+                    </div>
+                    <div class="card">
+                        <div class="jugad"><button class="jugadi_button"><svg class="jugadi_button_ka_play" data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 24 24" class="Svg-sc-ytk21e-0 bneLcE"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg></button></div>
+
+                        <img  class="cardphoto" aria-hidden="false" draggable="false" loading="eager" src="https://i.scdn.co/image/ab67656300005f1f9defd575cda76616251f6b19" alt="Decode Dil with Ekta" class="mMx2LUixlnN_Fu45JpFB CmkY1Ag0tJDfnFXbGgju _EShSNaBK1wUIaZQFJJQ Yn2Ei5QZn19gria6LjZj" srcset="https://i.scdn.co/image/ab67656300005f1f9defd575cda76616251f6b19 150w, https://i.scdn.co/image/ab67656300005f1f9defd575cda76616251f6b19 300w, https://i.scdn.co/image/ab6765630000ba8a9defd575cda76616251f6b19 320w, https://i.scdn.co/image/ab6765630000ba8a9defd575cda76616251f6b19 640w" sizes="(min-width: 1280px) 232px, 192px">
+                        <div class="name"><h3>Decode Dil with Ekta </h3></div>
+                        <div class="decs">Spotify Studios</div>
+                    </div>
+                </div>
+                <div class="mainft"> 
+                    <div class="fthd">
+                        <div class="box" id="box1">
+                            <h6 class="midh6">Company</h6>
+                            <ul>
+                              <li class="listitems">About</li>
+                              <li class="listitems">Jobs</li>
+                              <li class="listitems">For the records</li>
+                            </ul>
+                        </div>
+                        <div class="box" id="box3">
+                            <h6 class="midh6">Communities</h6>
+                            <ul>
+                              <li class="listitems">For Aritists</li>
+                              <li class="listitems">Developers</li>
+                              <li class="listitems">Advertising</li>
+                              <li class="listitems">Investors</li>
+                              <li class="listitems">Venders</li>
+                            </ul>
+                        </div>
+                        <div class="box" id="box3">
+                            <h6 class="midh6">Useful links</h6>
+                            <ul>
+                              <li class="listitems">Support</li>
+                              <li class="listitems">Free Mobile App</li>
+                            </ul>
+                        </div>
+                        <div class="box" id="box4"></div>
+                        <div class="insta">
+                            <button class="mani_ka_footer_ke_social_media_button"><svg class="icon2" role="img" height="16" width="16" aria-hidden="true" viewBox="0 0 16 16" data-encore-id="icon" class="Svg-sc-ytk21e-0 hOjEcl"><path d="M8 1.44c2.136 0 2.389.009 3.233.047.78.036 1.203.166 1.485.276.348.128.663.332.921.598.266.258.47.573.599.921.11.282.24.706.275 1.485.039.844.047 1.097.047 3.233s-.008 2.389-.047 3.232c-.035.78-.166 1.204-.275 1.486a2.654 2.654 0 01-1.518 1.518c-.282.11-.706.24-1.486.275-.843.039-1.097.047-3.233.047s-2.39-.008-3.232-.047c-.78-.035-1.204-.165-1.486-.275a2.477 2.477 0 01-.921-.599 2.477 2.477 0 01-.599-.92c-.11-.282-.24-.706-.275-1.486-.038-.844-.047-1.096-.047-3.232s.009-2.39.047-3.233c.036-.78.166-1.203.275-1.485.129-.348.333-.663.599-.921a2.49 2.49 0 01.92-.599c.283-.11.707-.24 1.487-.275.843-.038 1.096-.047 3.232-.047L8 1.441zm.001-1.442c-2.172 0-2.445.01-3.298.048-.854.04-1.435.176-1.943.373a3.928 3.928 0 00-1.417.923c-.407.4-.722.883-.923 1.417-.198.508-.333 1.09-.372 1.942C.01 5.552 0 5.826 0 8c0 2.172.01 2.445.048 3.298.04.853.174 1.433.372 1.941.2.534.516 1.017.923 1.417.4.407.883.722 1.417.923.508.198 1.09.333 1.942.372.852.039 1.126.048 3.299.048 2.172 0 2.445-.01 3.298-.048.853-.04 1.433-.174 1.94-.372a4.087 4.087 0 002.34-2.34c.199-.508.334-1.09.373-1.942.039-.851.048-1.125.048-3.298s-.01-2.445-.048-3.298c-.04-.853-.174-1.433-.372-1.94a3.924 3.924 0 00-.923-1.418A3.928 3.928 0 0013.24.42c-.508-.197-1.09-.333-1.942-.371-.851-.041-1.125-.05-3.298-.05l.001-.001z"></path><path d="M8 3.892a4.108 4.108 0 100 8.216 4.108 4.108 0 000-8.216zm0 6.775a2.668 2.668 0 110-5.335 2.668 2.668 0 010 5.335zm4.27-5.978a.96.96 0 100-1.92.96.96 0 000 1.92z"></path></svg></button>
+                            <button class="mani_ka_footer_ke_social_media_button"><svg class="icon2" role="img" height="16" width="16" aria-hidden="true" viewBox="0 0 16 16" data-encore-id="icon" class="Svg-sc-ytk21e-0 hOjEcl"><path d="M13.54 3.889a2.968 2.968 0 001.333-1.683 5.937 5.937 0 01-1.929.738 2.992 2.992 0 00-.996-.706 2.98 2.98 0 00-1.218-.254 2.92 2.92 0 00-2.143.889 2.929 2.929 0 00-.889 2.15c0 .212.027.442.08.691a8.475 8.475 0 01-3.484-.932A8.536 8.536 0 011.532 2.54a2.993 2.993 0 00-.413 1.523c0 .519.12 1 .361 1.445.24.445.57.805.988 1.08a2.873 2.873 0 01-1.373-.374v.04c0 .725.23 1.365.69 1.92a2.97 2.97 0 001.739 1.048 2.937 2.937 0 01-1.365.056 2.94 2.94 0 001.063 1.5 2.945 2.945 0 001.77.603 5.944 5.944 0 01-3.77 1.302c-.243 0-.484-.016-.722-.048A8.414 8.414 0 005.15 14c.905 0 1.763-.12 2.572-.361.81-.24 1.526-.57 2.147-.988a9.044 9.044 0 001.683-1.46c.5-.556.911-1.155 1.234-1.798a9.532 9.532 0 00.738-1.988 8.417 8.417 0 00.246-2.429 6.177 6.177 0 001.508-1.563c-.56.249-1.14.407-1.738.476z"></path></svg></button>
+                            <button class="mani_ka_footer_ke_social_media_button"><svg class="icon2" role="img" height="16" width="16" aria-hidden="true" viewBox="0 0 16 16" data-encore-id="icon" class="Svg-sc-ytk21e-0 haNxPq"><path d="M16 8a8 8 0 10-9.25 7.903v-5.59H4.719V8H6.75V6.237c0-2.005 1.194-3.112 3.022-3.112.875 0 1.79.156 1.79.156V5.25h-1.008c-.994 0-1.304.617-1.304 1.25V8h2.219l-.355 2.313H9.25v5.59A8.002 8.002 0 0016 8z"></path></svg></button>
+                        </div>
+                    </div>
+                    <div class="ftft">
+                        <h6 class="ft_ft_h6">Legal</h6>
+                        <h6 class="ft_ft_h6">Safety & Privacy</h6>
+                        <h6 class="ft_ft_h6">Privacy policy</h6>
+                        <h6 class="ft_ft_h6">Cookies</h6>
+                        <h6 class="ft_ft_h6">About Ads</h6>
+                        <h6 class="ft_ft_h6">Accessibility</h6>
+                        <h6 class="copy">@2024 Spotify AB</h6>
+                    </div>
+                </div>
+            </div>
+       
+            <script src="script.js"></script> 
+
+
+
+
+
+        
+        
+         <div class="search_ka_main search_div_on home_button_off playlist_button_off">
+            <div class="search_ke_main_ka_nav">
+                <div class="search_ke_main_ka_nav_ka_left">
+                    <div class="arrow">
+                        <button class="ba"><svg class="icon2" role="img" aria-hidden="true" class="Svg-sc-ytk21e-0 cAMMLk IYDlXmBmmUKHveMzIPCF" viewBox="0 0 16 16"><path d="M11.03.47a.75.75 0 0 1 0 1.06L4.56 8l6.47 6.47a.75.75 0 1 1-1.06 1.06L2.44 8 9.97.47a.75.75 0 0 1 1.06 0z"></path></svg></button>
+                        <button class="ba"><svg class="icon2" role="img" aria-hidden="true" class="Svg-sc-ytk21e-0 cAMMLk IYDlXmBmmUKHveMzIPCF" viewBox="0 0 16 16"><path d="M4.97.47a.75.75 0 0 0 0 1.06L11.44 8l-6.47 6.47a.75.75 0 1 0 1.06 1.06L13.56 8 6.03.47a.75.75 0 0 0-1.06 0z"></path></svg></button>
+                    </div>
+                    <div class="search_bar">
+                       <i><svg class="icon" id="search_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg></i>
+                       <input class="text_box" id="tb" type="text" value="What you want to play??">
+                       <script src="script.js"></script> 
+                    </div>
+                    <script src="script.js"></script> 
+
+                </div>
+                <div class="search_ke_main_ka_nav_ka_right">
+                    <button class="install" id="ins">Install app</button>
+                    <button id="bell"><svg class="icon2" role="img" aria-hidden="true" viewBox="0 0 16 16" class="Svg-sc-ytk21e-0 dYnaPI"><path d="M8 1.5a4 4 0 0 0-4 4v3.27a.75.75 0 0 1-.1.373L2.255 12h11.49L12.1 9.142a.75.75 0 0 1-.1-.374V5.5a4 4 0 0 0-4-4zm-5.5 4a5.5 5.5 0 0 1 11 0v3.067l2.193 3.809a.75.75 0 0 1-.65 1.124H10.5a2.5 2.5 0 0 1-5 0H.957a.75.75 0 0 1-.65-1.124L2.5 8.569V5.5zm4.5 8a1 1 0 1 0 2 0H7z"></path></svg></button>
+                    <button id="k">K</button>
+                </div>
+            </div>
+            <div class="search_ke_main_ka_main">
+                <h2 class="h k">Recent searches</h2>
+                    <div class="card">
+                        <div class="jugad"><button class="jugadi_button"><svg class="jugadi_button_ka_play" data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 24 24" class="Svg-sc-ytk21e-0 bneLcE"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg></button></div>
+                        <img class="cardphoto"aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67616d00001e02497b38a2a59095193de438d1" alt="Ram Siya Ram (From &quot;Adipurush&quot;)" class="mMx2LUixlnN_Fu45JpFB CmkY1Ag0tJDfnFXbGgju _EShSNaBK1wUIaZQFJJQ Yn2Ei5QZn19gria6LjZj" srcset="https://i.scdn.co/image/ab67616d00001e02497b38a2a59095193de438d1 150w, https://i.scdn.co/image/ab67616d00001e02497b38a2a59095193de438d1 300w, https://i.scdn.co/image/ab67616d0000b273497b38a2a59095193de438d1 320w, https://i.scdn.co/image/ab67616d0000b273497b38a2a59095193de438d1 640w" sizes="(min-width: 1280px) 232px, 192px">
+                        <div class="name"><h3>Ram Siya Ram (Fro..</h3></div>
+                        <div class="decs">Sachet-Parampara, Sachet Tandon,...</div>
+                    </div>
+                <h2 class="h k2">Browse all</h2> 
+                <div class="search_card pink" >
+                    <h2 class="serch_card_ka_Text">Music</h2>
+                    <img class="search_card_phjoto"aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67fb8200005caf474a477debc822a3a45c5acb" alt="" class="mMx2LUixlnN_Fu45JpFB Op2n2H4o1iY0Xo2wAUH9 Yn2Ei5QZn19gria6LjZj">
+                </div>
+                <div class="search_card"><h2 class="serch_card_ka_Text">Podcasts</h2>
+                    <img class="search_card_phjoto" aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab6765630000ba8a81f07e1ead0317ee3c285bfa" alt="" class="mMx2LUixlnN_Fu45JpFB Op2n2H4o1iY0Xo2wAUH9 Yn2Ei5QZn19gria6LjZj">
+                </div>
+                <div class="search_card purple_bright"><h2 class="serch_card_ka_Text">Live Events</h2>
+                    <img class="search_card_phjoto" aria-hidden="false" draggable="false" loading="lazy" src="https://concerts.spotifycdn.com/images/live-events_category-image.jpg" alt="" class="mMx2LUixlnN_Fu45JpFB Op2n2H4o1iY0Xo2wAUH9 Yn2Ei5QZn19gria6LjZj">
+                </div>
+                <div class="search_card dark_blue"><h2 class="serch_card_ka_Text">Made For You</h2>
+                    <img class="search_card_phjoto"  aria-hidden="false" draggable="false" loading="lazy" src="https://t.scdn.co/images/ea364e99656e46a096ea1df50f581efe" alt="" class="mMx2LUixlnN_Fu45JpFB Op2n2H4o1iY0Xo2wAUH9 Yn2Ei5QZn19gria6LjZj">
+                </div>
+                <div class="search_card red"><h2 class="serch_card_ka_Text">New Releases</h2>
+                    <img class="search_card_phjoto" aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67706f000000027ea4d505212b9de1f72c5112" alt="" class="mMx2LUixlnN_Fu45JpFB Op2n2H4o1iY0Xo2wAUH9 Yn2Ei5QZn19gria6LjZj">
+                </div>
+
+
+                <div class="search_card pink">
+                    <h2 class="serch_card_ka_Text ">Music</h2>
+                    <img class="search_card_phjoto"aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67fb8200005caf474a477debc822a3a45c5acb" alt="" class="mMx2LUixlnN_Fu45JpFB Op2n2H4o1iY0Xo2wAUH9 Yn2Ei5QZn19gria6LjZj">
+                </div>
+                <div class="search_card dark_pink"><h2 class="serch_card_ka_Text">Podcasts</h2>
+                    <img class="search_card_phjoto" aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab6765630000ba8a81f07e1ead0317ee3c285bfa" alt="" class="mMx2LUixlnN_Fu45JpFB Op2n2H4o1iY0Xo2wAUH9 Yn2Ei5QZn19gria6LjZj">
+                </div>
+                <div class="search_card brown"><h2 class="serch_card_ka_Text">Live Events</h2>
+                    <img class="search_card_phjoto" aria-hidden="false" draggable="false" loading="lazy" src="https://concerts.spotifycdn.com/images/live-events_category-image.jpg" alt="" class="mMx2LUixlnN_Fu45JpFB Op2n2H4o1iY0Xo2wAUH9 Yn2Ei5QZn19gria6LjZj">
+                </div>
+                <div class="search_card grey"><h2 class="serch_card_ka_Text">Made For You</h2>
+                    <img class="search_card_phjoto"  aria-hidden="false" draggable="false" loading="lazy" src="https://t.scdn.co/images/ea364e99656e46a096ea1df50f581efe" alt="" class="mMx2LUixlnN_Fu45JpFB Op2n2H4o1iY0Xo2wAUH9 Yn2Ei5QZn19gria6LjZj">
+                </div>
+                <div class="search_card bright_blue"><h2 class="serch_card_ka_Text">New Releases</h2>
+                    <img class="search_card_phjoto" aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67706f000000027ea4d505212b9de1f72c5112" alt="" class="mMx2LUixlnN_Fu45JpFB Op2n2H4o1iY0Xo2wAUH9 Yn2Ei5QZn19gria6LjZj">
+                </div>
+
+
+
+                <div class="search_card light_purple">
+                    <h2 class="serch_card_ka_Text ">Music</h2>
+                    <img class="search_card_phjoto"aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67fb8200005caf474a477debc822a3a45c5acb" alt="" class="mMx2LUixlnN_Fu45JpFB Op2n2H4o1iY0Xo2wAUH9 Yn2Ei5QZn19gria6LjZj">
+                </div>
+                <div class="search_card red"><h2 class="serch_card_ka_Text">Podcasts</h2>
+                    <img class="search_card_phjoto" aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab6765630000ba8a81f07e1ead0317ee3c285bfa" alt="" class="mMx2LUixlnN_Fu45JpFB Op2n2H4o1iY0Xo2wAUH9 Yn2Ei5QZn19gria6LjZj">
+                </div>
+                <div class="search_card grey"><h2 class="serch_card_ka_Text">Live Events</h2>
+                    <img class="search_card_phjoto" aria-hidden="false" draggable="false" loading="lazy" src="https://concerts.spotifycdn.com/images/live-events_category-image.jpg" alt="" class="mMx2LUixlnN_Fu45JpFB Op2n2H4o1iY0Xo2wAUH9 Yn2Ei5QZn19gria6LjZj">
+                </div>
+                <div class="search_card light_purple"><h2 class="serch_card_ka_Text">Made For You</h2>
+                    <img class="search_card_phjoto"  aria-hidden="false" draggable="false" loading="lazy" src="https://t.scdn.co/images/ea364e99656e46a096ea1df50f581efe" alt="" class="mMx2LUixlnN_Fu45JpFB Op2n2H4o1iY0Xo2wAUH9 Yn2Ei5QZn19gria6LjZj">
+                </div>
+                <div class="search_card dark_blue"><h2 class="serch_card_ka_Text">New Releases</h2>
+                    <img class="search_card_phjoto" aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67706f000000027ea4d505212b9de1f72c5112" alt="" class="mMx2LUixlnN_Fu45JpFB Op2n2H4o1iY0Xo2wAUH9 Yn2Ei5QZn19gria6LjZj">
+                </div>
+
+
+
+                <div class="search_card light_green">
+                    <h2 class="serch_card_ka_Text">Music</h2>
+                    <img class="search_card_phjoto"aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67fb8200005caf474a477debc822a3a45c5acb" alt="" class="mMx2LUixlnN_Fu45JpFB Op2n2H4o1iY0Xo2wAUH9 Yn2Ei5QZn19gria6LjZj">
+                </div>
+                <div class="search_card red"><h2 class="serch_card_ka_Text">Podcasts</h2>
+                    <img class="search_card_phjoto" aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab6765630000ba8a81f07e1ead0317ee3c285bfa" alt="" class="mMx2LUixlnN_Fu45JpFB Op2n2H4o1iY0Xo2wAUH9 Yn2Ei5QZn19gria6LjZj">
+                </div>
+                <div class="search_card red"><h2 class="serch_card_ka_Text">Live Events</h2>
+                    <img class="search_card_phjoto" aria-hidden="false" draggable="false" loading="lazy" src="https://concerts.spotifycdn.com/images/live-events_category-image.jpg" alt="" class="mMx2LUixlnN_Fu45JpFB Op2n2H4o1iY0Xo2wAUH9 Yn2Ei5QZn19gria6LjZj">
+                </div>
+                <div class="search_card light_purple"><h2 class="serch_card_ka_Text">Made For You</h2>
+                    <img class="search_card_phjoto"  aria-hidden="false" draggable="false" loading="lazy" src="https://t.scdn.co/images/ea364e99656e46a096ea1df50f581efe" alt="" class="mMx2LUixlnN_Fu45JpFB Op2n2H4o1iY0Xo2wAUH9 Yn2Ei5QZn19gria6LjZj">
+                </div>
+                <div class="search_card dark_pink"><h2 class="serch_card_ka_Text">New Releases</h2>
+                    <img class="search_card_phjoto " aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67706f000000027ea4d505212b9de1f72c5112" alt="" class="mMx2LUixlnN_Fu45JpFB Op2n2H4o1iY0Xo2wAUH9 Yn2Ei5QZn19gria6LjZj">
+                </div>
+
+
+
+                <div class="search_card pink">
+                    <h2 class="serch_card_ka_Text">Music</h2>
+                    <img class="search_card_phjoto"aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67fb8200005caf474a477debc822a3a45c5acb" alt="" class="mMx2LUixlnN_Fu45JpFB Op2n2H4o1iY0Xo2wAUH9 Yn2Ei5QZn19gria6LjZj">
+                </div>
+                <div class="search_card blue"><h2 class="serch_card_ka_Text">Podcasts</h2>
+                    <img class="search_card_phjoto" aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab6765630000ba8a81f07e1ead0317ee3c285bfa" alt="" class="mMx2LUixlnN_Fu45JpFB Op2n2H4o1iY0Xo2wAUH9 Yn2Ei5QZn19gria6LjZj">
+                </div>
+                <div class="search_card light_brown"><h2 class="serch_card_ka_Text">Live Events</h2>
+                    <img class="search_card_phjoto" aria-hidden="false" draggable="false" loading="lazy" src="https://concerts.spotifycdn.com/images/live-events_category-image.jpg" alt="" class="mMx2LUixlnN_Fu45JpFB Op2n2H4o1iY0Xo2wAUH9 Yn2Ei5QZn19gria6LjZj">
+                </div>
+                <div class="search_card dark_yellow"><h2 class="serch_card_ka_Text">Made For You</h2>
+                    <img class="search_card_phjoto"  aria-hidden="false" draggable="false" loading="lazy" src="https://t.scdn.co/images/ea364e99656e46a096ea1df50f581efe" alt="" class="mMx2LUixlnN_Fu45JpFB Op2n2H4o1iY0Xo2wAUH9 Yn2Ei5QZn19gria6LjZj">
+                </div>
+                <div class="search_card"><h2 class="serch_card_ka_Text">New Releases</h2>
+                    <img class="search_card_phjoto" aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67706f000000027ea4d505212b9de1f72c5112" alt="" class="mMx2LUixlnN_Fu45JpFB Op2n2H4o1iY0Xo2wAUH9 Yn2Ei5QZn19gria6LjZj">
+                </div>
+
+
+
+                <div class="search_card red">
+                    <h2 class="serch_card_ka_Text">Music</h2>
+                    <img class="search_card_phjoto"aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67fb8200005caf474a477debc822a3a45c5acb" alt="" class="mMx2LUixlnN_Fu45JpFB Op2n2H4o1iY0Xo2wAUH9 Yn2Ei5QZn19gria6LjZj">
+                </div>
+                <div class="search_card dark_pink"><h2 class="serch_card_ka_Text">Podcasts</h2>
+                    <img class="search_card_phjoto" aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab6765630000ba8a81f07e1ead0317ee3c285bfa" alt="" class="mMx2LUixlnN_Fu45JpFB Op2n2H4o1iY0Xo2wAUH9 Yn2Ei5QZn19gria6LjZj">
+                </div>
+                <div class="search_card red"><h2 class="serch_card_ka_Text">Live Events</h2>
+                    <img class="search_card_phjoto" aria-hidden="false" draggable="false" loading="lazy" src="https://concerts.spotifycdn.com/images/live-events_category-image.jpg" alt="" class="mMx2LUixlnN_Fu45JpFB Op2n2H4o1iY0Xo2wAUH9 Yn2Ei5QZn19gria6LjZj">
+                </div>
+                <div class="search_card dark_pink"><h2 class="serch_card_ka_Text">Made For You</h2>
+                    <img class="search_card_phjoto"  aria-hidden="false" draggable="false" loading="lazy" src="https://t.scdn.co/images/ea364e99656e46a096ea1df50f581efe" alt="" class="mMx2LUixlnN_Fu45JpFB Op2n2H4o1iY0Xo2wAUH9 Yn2Ei5QZn19gria6LjZj">
+                </div>
+                <div class="search_card light_green"><h2 class="serch_card_ka_Text">New Releases</h2>
+                    <img class="search_card_phjoto" aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67706f000000027ea4d505212b9de1f72c5112" alt="" class="mMx2LUixlnN_Fu45JpFB Op2n2H4o1iY0Xo2wAUH9 Yn2Ei5QZn19gria6LjZj">
+                </div>
+
+
+
+                <div class="search_card grey">
+                    <h2 class="serch_card_ka_Text ">Music</h2>
+                    <img class="search_card_phjoto"aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67fb8200005caf474a477debc822a3a45c5acb" alt="" class="mMx2LUixlnN_Fu45JpFB Op2n2H4o1iY0Xo2wAUH9 Yn2Ei5QZn19gria6LjZj">
+                </div>
+                <div class="search_card  dark_yellow"><h2 class="serch_card_ka_Text">Podcasts</h2>
+                    <img class="search_card_phjoto" aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab6765630000ba8a81f07e1ead0317ee3c285bfa" alt="" class="mMx2LUixlnN_Fu45JpFB Op2n2H4o1iY0Xo2wAUH9 Yn2Ei5QZn19gria6LjZj">
+                </div>
+                <div class="search_card"><h2 class="serch_card_ka_Text">Live Events</h2>
+                    <img class="search_card_phjoto" aria-hidden="false" draggable="false" loading="lazy" src="https://concerts.spotifycdn.com/images/live-events_category-image.jpg" alt="" class="mMx2LUixlnN_Fu45JpFB Op2n2H4o1iY0Xo2wAUH9 Yn2Ei5QZn19gria6LjZj">
+                </div>
+                <div class="search_card pink"><h2 class="serch_card_ka_Text">Made For You</h2>
+                    <img class="search_card_phjoto"  aria-hidden="false" draggable="false" loading="lazy" src="https://t.scdn.co/images/ea364e99656e46a096ea1df50f581efe" alt="" class="mMx2LUixlnN_Fu45JpFB Op2n2H4o1iY0Xo2wAUH9 Yn2Ei5QZn19gria6LjZj">
+                </div>
+                <div class="search_card red"><h2 class="serch_card_ka_Text">New Releases</h2>
+                    <img class="search_card_phjoto" aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67706f000000027ea4d505212b9de1f72c5112" alt="" class="mMx2LUixlnN_Fu45JpFB Op2n2H4o1iY0Xo2wAUH9 Yn2Ei5QZn19gria6LjZj">
+                </div>
+
+
+
+                <div class="search_card dark_blue">
+                    <h2 class="serch_card_ka_Text">Music</h2>
+                    <img class="search_card_phjoto"aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67fb8200005caf474a477debc822a3a45c5acb" alt="" class="mMx2LUixlnN_Fu45JpFB Op2n2H4o1iY0Xo2wAUH9 Yn2Ei5QZn19gria6LjZj">
+                </div>
+                <div class="search_card brown"><h2 class="serch_card_ka_Text">Podcasts</h2>
+                    <img class="search_card_phjoto" aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab6765630000ba8a81f07e1ead0317ee3c285bfa" alt="" class="mMx2LUixlnN_Fu45JpFB Op2n2H4o1iY0Xo2wAUH9 Yn2Ei5QZn19gria6LjZj">
+                </div>
+                <div class="search_card blue"><h2 class="serch_card_ka_Text">Live Events</h2>
+                    <img class="search_card_phjoto" aria-hidden="false" draggable="false" loading="lazy" src="https://concerts.spotifycdn.com/images/live-events_category-image.jpg" alt="" class="mMx2LUixlnN_Fu45JpFB Op2n2H4o1iY0Xo2wAUH9 Yn2Ei5QZn19gria6LjZj">
+                </div>
+                <div class="search_card grey"><h2 class="serch_card_ka_Text">Made For You</h2>
+                    <img class="search_card_phjoto"  aria-hidden="false" draggable="false" loading="lazy" src="https://t.scdn.co/images/ea364e99656e46a096ea1df50f581efe" alt="" class="mMx2LUixlnN_Fu45JpFB Op2n2H4o1iY0Xo2wAUH9 Yn2Ei5QZn19gria6LjZj">
+                </div>
+                <div class="search_card blue"><h2 class="serch_card_ka_Text">New Releases</h2>
+                    <img class="search_card_phjoto" aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67706f000000027ea4d505212b9de1f72c5112" alt="" class="mMx2LUixlnN_Fu45JpFB Op2n2H4o1iY0Xo2wAUH9 Yn2Ei5QZn19gria6LjZj">
+                </div>
+
+
+
+
+                <div class="search_card red">
+                    <h2 class="serch_card_ka_Text ">Music</h2>
+                    <img class="search_card_phjoto"aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67fb8200005caf474a477debc822a3a45c5acb" alt="" class="mMx2LUixlnN_Fu45JpFB Op2n2H4o1iY0Xo2wAUH9 Yn2Ei5QZn19gria6LjZj">
+                </div>
+                <div class="search_card  dark_yellow"><h2 class="serch_card_ka_Text">Podcasts</h2>
+                    <img class="search_card_phjoto" aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab6765630000ba8a81f07e1ead0317ee3c285bfa" alt="" class="mMx2LUixlnN_Fu45JpFB Op2n2H4o1iY0Xo2wAUH9 Yn2Ei5QZn19gria6LjZj">
+                </div>
+                <div class="search_card red"><h2 class="serch_card_ka_Text">Live Events</h2>
+                    <img class="search_card_phjoto" aria-hidden="false" draggable="false" loading="lazy" src="https://concerts.spotifycdn.com/images/live-events_category-image.jpg" alt="" class="mMx2LUixlnN_Fu45JpFB Op2n2H4o1iY0Xo2wAUH9 Yn2Ei5QZn19gria6LjZj">
+                </div>
+                <div class="search_card dark_pink"><h2 class="serch_card_ka_Text">Made For You</h2>
+                    <img class="search_card_phjoto"  aria-hidden="false" draggable="false" loading="lazy" src="https://t.scdn.co/images/ea364e99656e46a096ea1df50f581efe" alt="" class="mMx2LUixlnN_Fu45JpFB Op2n2H4o1iY0Xo2wAUH9 Yn2Ei5QZn19gria6LjZj">
+                </div>
+                <div class="search_card"><h2 class="serch_card_ka_Text">New Releases</h2>
+                    <img class="search_card_phjoto" aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67706f000000027ea4d505212b9de1f72c5112" alt="" class="mMx2LUixlnN_Fu45JpFB Op2n2H4o1iY0Xo2wAUH9 Yn2Ei5QZn19gria6LjZj">
+                </div>
+
+
+
+                <div class="search_card dark_blue">
+                    <h2 class="serch_card_ka_Text">Music</h2>
+                    <img class="search_card_phjoto"aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67fb8200005caf474a477debc822a3a45c5acb" alt="" class="mMx2LUixlnN_Fu45JpFB Op2n2H4o1iY0Xo2wAUH9 Yn2Ei5QZn19gria6LjZj">
+                </div>
+                <div class="search_card bright_blue"><h2 class="serch_card_ka_Text">Podcasts</h2>
+                    <img class="search_card_phjoto" aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab6765630000ba8a81f07e1ead0317ee3c285bfa" alt="" class="mMx2LUixlnN_Fu45JpFB Op2n2H4o1iY0Xo2wAUH9 Yn2Ei5QZn19gria6LjZj">
+                </div>
+                 
+            </div>
+            <div class="search_ke_main_ka_footer">
+                    <div class="fthd" id="search_ka_fthd">
+                        <div class="box" id="box1">
+                            <h6 class="midh6">Company</h6>
+                            <ul>
+                              <li class="listitems">About</li>
+                              <li class="listitems">Jobs</li>
+                              <li class="listitems">For the records</li>
+                            </ul>
+                        </div>
+                        <div class="box" id="box3">
+                            <h6 class="midh6">Communities</h6>
+                            <ul>
+                              <li class="listitems">For Aritists</li>
+                              <li class="listitems">Developers</li>
+                              <li class="listitems">Advertising</li>
+                              <li class="listitems">Investors</li>
+                              <li class="listitems">Venders</li>
+                            </ul>
+                        </div>
+                        <div class="box" id="box3">
+                            <h6 class="midh6">Useful links</h6>
+                            <ul>
+                              <li class="listitems">Support</li>
+                              <li class="listitems">Free Mobile App</li>
+                            </ul>
+                        </div>
+                        <div class="box" id="box4"></div>
+                        <div class="insta">
+                            <button class="mani_ka_footer_ke_social_media_button"><svg class="icon2" role="img" height="16" width="16" aria-hidden="true" viewBox="0 0 16 16" data-encore-id="icon" class="Svg-sc-ytk21e-0 hOjEcl"><path d="M8 1.44c2.136 0 2.389.009 3.233.047.78.036 1.203.166 1.485.276.348.128.663.332.921.598.266.258.47.573.599.921.11.282.24.706.275 1.485.039.844.047 1.097.047 3.233s-.008 2.389-.047 3.232c-.035.78-.166 1.204-.275 1.486a2.654 2.654 0 01-1.518 1.518c-.282.11-.706.24-1.486.275-.843.039-1.097.047-3.233.047s-2.39-.008-3.232-.047c-.78-.035-1.204-.165-1.486-.275a2.477 2.477 0 01-.921-.599 2.477 2.477 0 01-.599-.92c-.11-.282-.24-.706-.275-1.486-.038-.844-.047-1.096-.047-3.232s.009-2.39.047-3.233c.036-.78.166-1.203.275-1.485.129-.348.333-.663.599-.921a2.49 2.49 0 01.92-.599c.283-.11.707-.24 1.487-.275.843-.038 1.096-.047 3.232-.047L8 1.441zm.001-1.442c-2.172 0-2.445.01-3.298.048-.854.04-1.435.176-1.943.373a3.928 3.928 0 00-1.417.923c-.407.4-.722.883-.923 1.417-.198.508-.333 1.09-.372 1.942C.01 5.552 0 5.826 0 8c0 2.172.01 2.445.048 3.298.04.853.174 1.433.372 1.941.2.534.516 1.017.923 1.417.4.407.883.722 1.417.923.508.198 1.09.333 1.942.372.852.039 1.126.048 3.299.048 2.172 0 2.445-.01 3.298-.048.853-.04 1.433-.174 1.94-.372a4.087 4.087 0 002.34-2.34c.199-.508.334-1.09.373-1.942.039-.851.048-1.125.048-3.298s-.01-2.445-.048-3.298c-.04-.853-.174-1.433-.372-1.94a3.924 3.924 0 00-.923-1.418A3.928 3.928 0 0013.24.42c-.508-.197-1.09-.333-1.942-.371-.851-.041-1.125-.05-3.298-.05l.001-.001z"></path><path d="M8 3.892a4.108 4.108 0 100 8.216 4.108 4.108 0 000-8.216zm0 6.775a2.668 2.668 0 110-5.335 2.668 2.668 0 010 5.335zm4.27-5.978a.96.96 0 100-1.92.96.96 0 000 1.92z"></path></svg></button>
+                            <button class="mani_ka_footer_ke_social_media_button"><svg class="icon2" role="img" height="16" width="16" aria-hidden="true" viewBox="0 0 16 16" data-encore-id="icon" class="Svg-sc-ytk21e-0 hOjEcl"><path d="M13.54 3.889a2.968 2.968 0 001.333-1.683 5.937 5.937 0 01-1.929.738 2.992 2.992 0 00-.996-.706 2.98 2.98 0 00-1.218-.254 2.92 2.92 0 00-2.143.889 2.929 2.929 0 00-.889 2.15c0 .212.027.442.08.691a8.475 8.475 0 01-3.484-.932A8.536 8.536 0 011.532 2.54a2.993 2.993 0 00-.413 1.523c0 .519.12 1 .361 1.445.24.445.57.805.988 1.08a2.873 2.873 0 01-1.373-.374v.04c0 .725.23 1.365.69 1.92a2.97 2.97 0 001.739 1.048 2.937 2.937 0 01-1.365.056 2.94 2.94 0 001.063 1.5 2.945 2.945 0 001.77.603 5.944 5.944 0 01-3.77 1.302c-.243 0-.484-.016-.722-.048A8.414 8.414 0 005.15 14c.905 0 1.763-.12 2.572-.361.81-.24 1.526-.57 2.147-.988a9.044 9.044 0 001.683-1.46c.5-.556.911-1.155 1.234-1.798a9.532 9.532 0 00.738-1.988 8.417 8.417 0 00.246-2.429 6.177 6.177 0 001.508-1.563c-.56.249-1.14.407-1.738.476z"></path></svg></button>
+                            <button class="mani_ka_footer_ke_social_media_button"><svg class="icon2" role="img" height="16" width="16" aria-hidden="true" viewBox="0 0 16 16" data-encore-id="icon" class="Svg-sc-ytk21e-0 haNxPq"><path d="M16 8a8 8 0 10-9.25 7.903v-5.59H4.719V8H6.75V6.237c0-2.005 1.194-3.112 3.022-3.112.875 0 1.79.156 1.79.156V5.25h-1.008c-.994 0-1.304.617-1.304 1.25V8h2.219l-.355 2.313H9.25v5.59A8.002 8.002 0 0016 8z"></path></svg></button>
+                        </div>
+                    </div>
+                    <div class="ftft">
+                        <h6 class="ft_ft_h6">Legal</h6>
+                        <h6 class="ft_ft_h6">Safety & Privacy</h6>
+                        <h6 class="ft_ft_h6" >Privacy policy</h6>
+                        <h6 class="ft_ft_h6">Cookies</h6>
+                        <h6 class="ft_ft_h6">About Ads</h6>
+                        <h6 class="ft_ft_h6">Accessibility</h6>
+                        <h6 class="copy">@2024 Spotify AB</h6>
+                    </div>
+                
+            </div>
+
+            </div>
+         
+         <div class="playlist_ka_main search_div_off home_button_off playlist_button_on">
+            <div class="playlist_ka_main__ka_nav">
+                <div class="search_ke_main_ka_nav_ka_left">
+                    <div class="arrow">
+                        <button class="ba"><svg class="icon2" role="img" aria-hidden="true" class="Svg-sc-ytk21e-0 cAMMLk IYDlXmBmmUKHveMzIPCF" viewBox="0 0 16 16"><path d="M11.03.47a.75.75 0 0 1 0 1.06L4.56 8l6.47 6.47a.75.75 0 1 1-1.06 1.06L2.44 8 9.97.47a.75.75 0 0 1 1.06 0z"></path></svg></button>
+                        <button class="ba"><svg class="icon2" role="img" aria-hidden="true" class="Svg-sc-ytk21e-0 cAMMLk IYDlXmBmmUKHveMzIPCF" viewBox="0 0 16 16"><path d="M4.97.47a.75.75 0 0 0 0 1.06L11.44 8l-6.47 6.47a.75.75 0 1 0 1.06 1.06L13.56 8 6.03.47a.75.75 0 0 0-1.06 0z"></path></svg></button>
+                    </div>
+                    
+                </div>
+                <div class="playlist_ke_main_ka_nav_ka_right">
+                    <button class="explore">Explore Premium</button>
+                    <button class="install">Install app</button>
+                    <button id="bell"><svg class="icon2" role="img" aria-hidden="true" viewBox="0 0 16 16" class="Svg-sc-ytk21e-0 dYnaPI"><path d="M8 1.5a4 4 0 0 0-4 4v3.27a.75.75 0 0 1-.1.373L2.255 12h11.49L12.1 9.142a.75.75 0 0 1-.1-.374V5.5a4 4 0 0 0-4-4zm-5.5 4a5.5 5.5 0 0 1 11 0v3.067l2.193 3.809a.75.75 0 0 1-.65 1.124H10.5a2.5 2.5 0 0 1-5 0H.957a.75.75 0 0 1-.65-1.124L2.5 8.569V5.5zm4.5 8a1 1 0 1 0 2 0H7z"></path></svg></button>
+                    <button id="k">K</button>
+                </div>
+            </div>
+            <div class="playlist_ka_main__ka_liked_songs">
+                <img class="playlist_ka_like" aria-hidden="false" draggable="false" loading="eager" src="https://misc.scdn.co/liked-songs/liked-songs-300.png" alt="Liked Songs" class="mMx2LUixlnN_Fu45JpFB CmkY1Ag0tJDfnFXbGgju _EShSNaBK1wUIaZQFJJQ Yn2Ei5QZn19gria6LjZj" srcset="https://misc.scdn.co/liked-songs/liked-songs-300.png 150w, https://misc.scdn.co/liked-songs/liked-songs-300.png 300w, https://misc.scdn.co/liked-songs/liked-songs-640.png 320w, https://misc.scdn.co/liked-songs/liked-songs-640.png 640w" sizes="(min-width: 1280px) 232px, 192px">
+                 <div class="playlist_ka_liked_songs">
+                    <div class="playlist_ka_liked_songs_ka_playlists"  id="playlist_ki_id">Playlists</div>
+                    <div class="playlist_ka_liked_songs_ka_h1" ><h1 id="play_h1">Liked Songs</h1></div>
+                    <span class="playlist_ka_liked_songs_ka_playlists">Khushal goyal. 12 songs</span>
+                 </div> 
+            </div>
+            <div class="playlist_ka_main__ke_lists">
+                <button class="playlist_play_button"><svg class="jugadi_button_ka_play" data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 24 24" class="Svg-sc-ytk21e-0 bneLcE"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg></button>
+                <div class="playlist_list">
+                    <h6 class="playlist_list_h6">Lists</h6>
+                    <svg class="icon_5" role="img" aria-hidden="true" viewBox="0 0 16 16" class="Svg-sc-ytk21e-0 cAMMLk"><path d="M15 14.5H5V13h10v1.5zm0-5.75H5v-1.5h10v1.5zM15 3H5V1.5h10V3zM3 3H1V1.5h2V3zm0 11.5H1V13h2v1.5zm0-5.75H1v-1.5h2v1.5z"></path></svg>
+
+                </div>
+            </div>
+            <div class="playlist_ka_main__ka_text">
+                <div class="playlist_text_name">#</div> 
+                <div class="playlist_text_name">Title</div> 
+                <div class="playlist_text_name">Album</div> 
+                <div class="playlist_text_name">Date Added</div> 
+                <svg class="icon_5" id="text_clock"data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 16 16" class="Svg-sc-ytk21e-0 dYnaPI"><path d="M8 1.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13zM0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8z"></path><path d="M8 3.25a.75.75 0 0 1 .75.75v3.25H11a.75.75 0 0 1 0 1.5H7.25V4A.75.75 0 0 1 8 3.25z"></path></svg>
+            </div>
+            <script src="script.js"></script> 
+
+            <div class="playlist_ke_ganne_ka_main">
+                <div class="playlist_ke_ganne">
+                   <div class="hashtag">
+                    <h6 class="hashtag_h6">1</h6>
+                    <svg class="hashtag_play"data-encore-id="icon" role="img" aria-hidden="true" class="Svg-sc-ytk21e-0 bneLcE UIBT7E6ZYMcSDl1KL62g" viewBox="0 0 24 24"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg> 
+                   </div>
+                   <div class="title">
+                    <img class="photo_play" aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67616d00001e02bea812e03c07b505e759b7e2" alt="Karuna Karo Kasht Haro Gyan Do Bhagwan" class="mMx2LUixlnN_Fu45JpFB CmkY1Ag0tJDfnFXbGgju _EShSNaBK1wUIaZQFJJQ Yn2Ei5QZn19gria6LjZj" srcset="https://i.scdn.co/image/ab67616d00001e02bea812e03c07b505e759b7e2 150w, https://i.scdn.co/image/ab67616d00001e02bea812e03c07b505e759b7e2 300w, https://i.scdn.co/image/ab67616d0000b273bea812e03c07b505e759b7e2 320w, https://i.scdn.co/image/ab67616d0000b273bea812e03c07b505e759b7e2 640w" sizes="(min-width: 1280px) 232px, 192px">
+                    <div class="title_name">Karuna Karo Kasht Haro Gyan Do Bhagwan</div> 
+                    <div class="title_author">Dr. Prakhar Dagar</div> 
+ 
+                   </div>
+                   <div class="album">Karuna Karo Kasht Haro Gyan Do Bha...</div>
+                   <div class="date">Jan 12, 2024</div> 
+                   <div class="clock">
+                    <svg class="clock_ka_dil"data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 16 16" class="Svg-sc-ytk21e-0 dYnaPI"><path d="M15.724 4.22A4.313 4.313 0 0 0 12.192.814a4.269 4.269 0 0 0-3.622 1.13.837.837 0 0 1-1.14 0 4.272 4.272 0 0 0-6.21 5.855l5.916 7.05a1.128 1.128 0 0 0 1.727 0l5.916-7.05a4.228 4.228 0 0 0 .945-3.577z"></path></svg>
+                    <div class="clock_time">4:51</div>
+                    <svg class="clock_ke_dots" data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 16 16" class="Svg-sc-ytk21e-0 dYnaPI"><path d="M3 8a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm6.5 0a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zM16 8a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"></path></svg>
+                   </div> 
+                </div>
+                <div class="playlist_ke_ganne">
+                    <div class="hashtag">
+                        <h6 class="hashtag_h6">2</h6>
+                    <svg class="hashtag_play"data-encore-id="icon" role="img" aria-hidden="true" class="Svg-sc-ytk21e-0 bneLcE UIBT7E6ZYMcSDl1KL62g" viewBox="0 0 24 24"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg> 
+                   
+                    </div>
+                    <div class="title">
+                     <img class="photo_play" aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67616d00001e02497b38a2a59095193de438d1" alt="Ram Siya Ram (From &quot;Adipurush&quot;)" class="mMx2LUixlnN_Fu45JpFB CmkY1Ag0tJDfnFXbGgju _EShSNaBK1wUIaZQFJJQ Yn2Ei5QZn19gria6LjZj" srcset="https://i.scdn.co/image/ab67616d00001e02497b38a2a59095193de438d1 150w, https://i.scdn.co/image/ab67616d00001e02497b38a2a59095193de438d1 300w, https://i.scdn.co/image/ab67616d0000b273497b38a2a59095193de438d1 320w, https://i.scdn.co/image/ab67616d0000b273497b38a2a59095193de438d1 640w" sizes="(min-width: 1280px) 232px, 192px"> 
+                     <div class="title_name">Ram Siya Ram (From "Adipurush")</div> 
+                     <div class="title_author th">Sachet-Parampara, Sachet Tandon, Parampara ...</div> 
+                    </div>
+                    <div class="album">Ram Siya Ram (From "Adipurush")</div>
+                    <div class="date">Jan 2, 2024</div> 
+                    <div class="clock">
+                        <svg class="clock_ka_dil"data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 16 16" class="Svg-sc-ytk21e-0 dYnaPI"><path d="M15.724 4.22A4.313 4.313 0 0 0 12.192.814a4.269 4.269 0 0 0-3.622 1.13.837.837 0 0 1-1.14 0 4.272 4.272 0 0 0-6.21 5.855l5.916 7.05a1.128 1.128 0 0 0 1.727 0l5.916-7.05a4.228 4.228 0 0 0 .945-3.577z"></path></svg>
+                    <div class="clock_time">3:50</div>
+                    <svg class="clock_ke_dots" data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 16 16" class="Svg-sc-ytk21e-0 dYnaPI"><path d="M3 8a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm6.5 0a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zM16 8a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"></path></svg>
+                   
+                    </div> 
+                 </div> 
+                 <div class="playlist_ke_ganne">
+                    <div class="hashtag">
+                        <h6 class="hashtag_h6">3</h6>
+                    <svg class="hashtag_play"data-encore-id="icon" role="img" aria-hidden="true" class="Svg-sc-ytk21e-0 bneLcE UIBT7E6ZYMcSDl1KL62g" viewBox="0 0 24 24"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg> 
+                   
+                    </div>
+                    <div class="title">
+                        <img class="photo_play"  aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67616d00001e02157ae2d31385b235f52d099d" alt="Goriyaan Goriyaan" class="mMx2LUixlnN_Fu45JpFB CmkY1Ag0tJDfnFXbGgju _EShSNaBK1wUIaZQFJJQ Yn2Ei5QZn19gria6LjZj" srcset="https://i.scdn.co/image/ab67616d00001e02157ae2d31385b235f52d099d 150w, https://i.scdn.co/image/ab67616d00001e02157ae2d31385b235f52d099d 300w, https://i.scdn.co/image/ab67616d0000b273157ae2d31385b235f52d099d 320w, https://i.scdn.co/image/ab67616d0000b273157ae2d31385b235f52d099d 640w" sizes="(min-width: 1280px) 232px, 192px">
+                        <div class="title_name">Goriyaan Goriyaan</div> 
+                        <div class="title_author">Romaana</div> 
+                         
+                    </div>
+                    <div class="album">Goriyaan Goriyaan</div>
+                    <div class="date">Feb 12, 2024</div> 
+                    <div class="clock"><svg class="clock_ka_dil"data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 16 16" class="Svg-sc-ytk21e-0 dYnaPI"><path d="M15.724 4.22A4.313 4.313 0 0 0 12.192.814a4.269 4.269 0 0 0-3.622 1.13.837.837 0 0 1-1.14 0 4.272 4.272 0 0 0-6.21 5.855l5.916 7.05a1.128 1.128 0 0 0 1.727 0l5.916-7.05a4.228 4.228 0 0 0 .945-3.577z"></path></svg>
+                        <div class="clock_time">3:31</div>
+                        <svg class="clock_ke_dots" data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 16 16" class="Svg-sc-ytk21e-0 dYnaPI"><path d="M3 8a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm6.5 0a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zM16 8a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"></path></svg>
+                       </div> 
+                 </div> 
+                 <div class="playlist_ke_ganne">
+                    <div class="hashtag">
+                        <h6 class="hashtag_h6">4</h6>
+                    <svg class="hashtag_play"data-encore-id="icon" role="img" aria-hidden="true" class="Svg-sc-ytk21e-0 bneLcE UIBT7E6ZYMcSDl1KL62g" viewBox="0 0 24 24"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg> 
+                   
+                    </div>
+                    <div class="title">
+                        <img class="photo_play" aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67616d00001e02c5d1a94935357d8c7e61ed72" alt="Amplifier" class="mMx2LUixlnN_Fu45JpFB CmkY1Ag0tJDfnFXbGgju _EShSNaBK1wUIaZQFJJQ Yn2Ei5QZn19gria6LjZj" srcset="https://i.scdn.co/image/ab67616d00001e02c5d1a94935357d8c7e61ed72 150w, https://i.scdn.co/image/ab67616d00001e02c5d1a94935357d8c7e61ed72 300w, https://i.scdn.co/image/ab67616d0000b273c5d1a94935357d8c7e61ed72 320w, https://i.scdn.co/image/ab67616d0000b273c5d1a94935357d8c7e61ed72 640w" sizes="(min-width: 1280px) 232px, 192px">
+                        <div class="title_name">Amplifier</div> 
+                     <div class="title_author">Imran Khan</div>  
+                    </div>
+                    <div class="album ">Amplifier</div>
+                    <div class="date">Jan 1, 2023</div> 
+                    <div class="clock"><svg class="clock_ka_dil"data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 16 16" class="Svg-sc-ytk21e-0 dYnaPI"><path d="M15.724 4.22A4.313 4.313 0 0 0 12.192.814a4.269 4.269 0 0 0-3.622 1.13.837.837 0 0 1-1.14 0 4.272 4.272 0 0 0-6.21 5.855l5.916 7.05a1.128 1.128 0 0 0 1.727 0l5.916-7.05a4.228 4.228 0 0 0 .945-3.577z"></path></svg>
+                        <div class="clock_time">3:51</div>
+                        <svg class="clock_ke_dots" data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 16 16" class="Svg-sc-ytk21e-0 dYnaPI"><path d="M3 8a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm6.5 0a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zM16 8a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"></path></svg>
+                       </div> 
+                 </div> 
+                 <div class="playlist_ke_ganne">
+                    <div class="hashtag">
+                        <h6 class="hashtag_h6">5</h6>
+                    <svg class="hashtag_play"data-encore-id="icon" role="img" aria-hidden="true" class="Svg-sc-ytk21e-0 bneLcE UIBT7E6ZYMcSDl1KL62g" viewBox="0 0 24 24"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg> 
+                   
+                    </div>
+                    <div class="title">
+                        <img class="photo_play" aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67616d00001e02468a4628419b3ebaf39358e0" alt="Gedi" class="mMx2LUixlnN_Fu45JpFB CmkY1Ag0tJDfnFXbGgju _EShSNaBK1wUIaZQFJJQ Yn2Ei5QZn19gria6LjZj" srcset="https://i.scdn.co/image/ab67616d00001e02468a4628419b3ebaf39358e0 150w, https://i.scdn.co/image/ab67616d00001e02468a4628419b3ebaf39358e0 300w, https://i.scdn.co/image/ab67616d0000b273468a4628419b3ebaf39358e0 320w, https://i.scdn.co/image/ab67616d0000b273468a4628419b3ebaf39358e0 640w" sizes="(min-width: 1280px) 232px, 192px">
+                        <div class="title_name">Gedi</div> 
+                        <div class="title_author">Kulbir Jhinjer</div>  
+                    </div>
+                    <div class="album">Gedi</div>
+                    <div class="date">Dec 15, 2023</div> 
+                    <div class="clock"><svg class="clock_ka_dil"data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 16 16" class="Svg-sc-ytk21e-0 dYnaPI"><path d="M15.724 4.22A4.313 4.313 0 0 0 12.192.814a4.269 4.269 0 0 0-3.622 1.13.837.837 0 0 1-1.14 0 4.272 4.272 0 0 0-6.21 5.855l5.916 7.05a1.128 1.128 0 0 0 1.727 0l5.916-7.05a4.228 4.228 0 0 0 .945-3.577z"></path></svg>
+                        <div class="clock_time">2:59</div>
+                        <svg class="clock_ke_dots" data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 16 16" class="Svg-sc-ytk21e-0 dYnaPI"><path d="M3 8a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm6.5 0a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zM16 8a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"></path></svg>
+                       </div> 
+                 </div> 
+                 <div class="playlist_ke_ganne">
+                    <div class="hashtag">
+                        <h6 class="hashtag_h6">6</h6>
+                    <svg class="hashtag_play"data-encore-id="icon" role="img" aria-hidden="true" class="Svg-sc-ytk21e-0 bneLcE UIBT7E6ZYMcSDl1KL62g" viewBox="0 0 24 24"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg> 
+                   
+                    </div>
+                    <div class="title">
+                        <img class="photo_play" aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67616d00001e02bc3d42d533487bcd051cf2de" alt="Yaar Graribaaz" class="mMx2LUixlnN_Fu45JpFB CmkY1Ag0tJDfnFXbGgju _EShSNaBK1wUIaZQFJJQ Yn2Ei5QZn19gria6LjZj" srcset="https://i.scdn.co/image/ab67616d00001e02bc3d42d533487bcd051cf2de 150w, https://i.scdn.co/image/ab67616d00001e02bc3d42d533487bcd051cf2de 300w, https://i.scdn.co/image/ab67616d0000b273bc3d42d533487bcd051cf2de 320w, https://i.scdn.co/image/ab67616d0000b273bc3d42d533487bcd051cf2de 640w" sizes="(min-width: 1280px) 232px, 192px">
+                        <div class="title_name">Yaar Graribaaz</div> 
+                     <div class="title_author">Dilpreet Dhillon, Karan Aujla, Shree Brar</div> 
+                    </div>
+                    <div class="album">Yaar Graribaaz</div>
+                    <div class="date">Sep 12, 2023</div> 
+                    <div class="clock"><svg class="clock_ka_dil"data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 16 16" class="Svg-sc-ytk21e-0 dYnaPI"><path d="M15.724 4.22A4.313 4.313 0 0 0 12.192.814a4.269 4.269 0 0 0-3.622 1.13.837.837 0 0 1-1.14 0 4.272 4.272 0 0 0-6.21 5.855l5.916 7.05a1.128 1.128 0 0 0 1.727 0l5.916-7.05a4.228 4.228 0 0 0 .945-3.577z"></path></svg>
+                        <div class="clock_time">3:40</div>
+                        <svg class="clock_ke_dots" data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 16 16" class="Svg-sc-ytk21e-0 dYnaPI"><path d="M3 8a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm6.5 0a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zM16 8a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"></path></svg>
+                       </div> 
+                 </div> 
+                 <div class="playlist_ke_ganne">
+                    <div class="hashtag">
+                        <h6 class="hashtag_h6">7</h6>
+                    <svg class="hashtag_play"data-encore-id="icon" role="img" aria-hidden="true" class="Svg-sc-ytk21e-0 bneLcE UIBT7E6ZYMcSDl1KL62g" viewBox="0 0 24 24"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg> 
+                   
+                    </div>
+                    <div class="title">
+                    <img class="photo_play" aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67616d00001e02982004d48d4e975ae4c328c6" alt="Choice" class="mMx2LUixlnN_Fu45JpFB CmkY1Ag0tJDfnFXbGgju _EShSNaBK1wUIaZQFJJQ Yn2Ei5QZn19gria6LjZj" srcset="https://i.scdn.co/image/ab67616d00001e02982004d48d4e975ae4c328c6 150w, https://i.scdn.co/image/ab67616d00001e02982004d48d4e975ae4c328c6 300w, https://i.scdn.co/image/ab67616d0000b273982004d48d4e975ae4c328c6 320w, https://i.scdn.co/image/ab67616d0000b273982004d48d4e975ae4c328c6 640w" sizes="(min-width: 1280px) 232px, 192px">
+                    <div class="title_name">Choice</div> 
+                     <div class="title_author">Amar Sehmbi, Kavvy Riyaaz</div> 
+                    </div>
+                    <div class="album">Choice</div>
+                    <div class="date">Aug 2, 2023</div> 
+                    <div class="clock"><svg class="clock_ka_dil"data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 16 16" class="Svg-sc-ytk21e-0 dYnaPI"><path d="M15.724 4.22A4.313 4.313 0 0 0 12.192.814a4.269 4.269 0 0 0-3.622 1.13.837.837 0 0 1-1.14 0 4.272 4.272 0 0 0-6.21 5.855l5.916 7.05a1.128 1.128 0 0 0 1.727 0l5.916-7.05a4.228 4.228 0 0 0 .945-3.577z"></path></svg>
+                        <div class="clock_time">2:59</div>
+                        <svg class="clock_ke_dots" data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 16 16" class="Svg-sc-ytk21e-0 dYnaPI"><path d="M3 8a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm6.5 0a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zM16 8a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"></path></svg>
+                       </div> 
+                 </div> 
+                 <div class="playlist_ke_ganne">
+                    <div class="hashtag"><h6 class="hashtag_h6">8</h6>
+                        <svg class="hashtag_play"data-encore-id="icon" role="img" aria-hidden="true" class="Svg-sc-ytk21e-0 bneLcE UIBT7E6ZYMcSDl1KL62g" viewBox="0 0 24 24"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg> 
+                       </div>
+                    <div class="title">
+                        <img class="photo_play" aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67616d00001e021a8c4618eda885a406958dd0" alt="OG" class="mMx2LUixlnN_Fu45JpFB CmkY1Ag0tJDfnFXbGgju _EShSNaBK1wUIaZQFJJQ Yn2Ei5QZn19gria6LjZj" srcset="https://i.scdn.co/image/ab67616d00001e021a8c4618eda885a406958dd0 150w, https://i.scdn.co/image/ab67616d00001e021a8c4618eda885a406958dd0 300w, https://i.scdn.co/image/ab67616d0000b2731a8c4618eda885a406958dd0 320w, https://i.scdn.co/image/ab67616d0000b2731a8c4618eda885a406958dd0 640w" sizes="(min-width: 1280px) 232px, 192px">
+                        <div class="title_name">OG</div> 
+                        <div class="title_author">Shubh</div>  
+                    </div>
+                    <div class="album">Still Rollin</div>
+                    <div class="date">Jan 24, 2024</div> 
+                    <div class="clock"><svg class="clock_ka_dil"data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 16 16" class="Svg-sc-ytk21e-0 dYnaPI"><path d="M15.724 4.22A4.313 4.313 0 0 0 12.192.814a4.269 4.269 0 0 0-3.622 1.13.837.837 0 0 1-1.14 0 4.272 4.272 0 0 0-6.21 5.855l5.916 7.05a1.128 1.128 0 0 0 1.727 0l5.916-7.05a4.228 4.228 0 0 0 .945-3.577z"></path></svg>
+                        <div class="clock_time">3:17</div>
+                        <svg class="clock_ke_dots" data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 16 16" class="Svg-sc-ytk21e-0 dYnaPI"><path d="M3 8a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm6.5 0a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zM16 8a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"></path></svg>
+                       </div> 
+                 </div> 
+                 <div class="playlist_ke_ganne">
+                    <div class="hashtag"><h6 class="hashtag_h6">9</h6>
+                        <svg class="hashtag_play"data-encore-id="icon" role="img" aria-hidden="true" class="Svg-sc-ytk21e-0 bneLcE UIBT7E6ZYMcSDl1KL62g" viewBox="0 0 24 24"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg> 
+                       </div>
+                    <div class="title">
+                        <img class="photo_play" aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67616d00001e02b19ec16558622ddbb7cc136b" alt="Shatranj" class="mMx2LUixlnN_Fu45JpFB CmkY1Ag0tJDfnFXbGgju _EShSNaBK1wUIaZQFJJQ Yn2Ei5QZn19gria6LjZj" srcset="https://i.scdn.co/image/ab67616d00001e02b19ec16558622ddbb7cc136b 150w, https://i.scdn.co/image/ab67616d00001e02b19ec16558622ddbb7cc136b 300w, https://i.scdn.co/image/ab67616d0000b273b19ec16558622ddbb7cc136b 320w, https://i.scdn.co/image/ab67616d0000b273b19ec16558622ddbb7cc136b 640w" sizes="(min-width: 1280px) 232px, 192px">
+                        <div class="title_name">Shatranj</div> 
+                        <div class="title_author">Gagan Kokri</div>  
+                    </div>
+                    <div class="album">Shatranj (Original)</div>
+                    <div class="date">Jan 31, 2024</div> 
+                    <div class="clock"><svg class="clock_ka_dil"data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 16 16" class="Svg-sc-ytk21e-0 dYnaPI"><path d="M15.724 4.22A4.313 4.313 0 0 0 12.192.814a4.269 4.269 0 0 0-3.622 1.13.837.837 0 0 1-1.14 0 4.272 4.272 0 0 0-6.21 5.855l5.916 7.05a1.128 1.128 0 0 0 1.727 0l5.916-7.05a4.228 4.228 0 0 0 .945-3.577z"></path></svg>
+                        <div class="clock_time">3:05</div>
+                        <svg class="clock_ke_dots" data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 16 16" class="Svg-sc-ytk21e-0 dYnaPI"><path d="M3 8a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm6.5 0a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zM16 8a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"></path></svg>
+                       </div> 
+                 </div> 
+                 <div class="playlist_ke_ganne">
+                    <div class="hashtag"><h6 class="hashtag_h6  hash_h6">10</h6>
+                        <svg class="hashtag_play"data-encore-id="icon" role="img" aria-hidden="true" class="Svg-sc-ytk21e-0 bneLcE UIBT7E6ZYMcSDl1KL62g" viewBox="0 0 24 24"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg> 
+                       </div>
+                    <div class="title">
+                        <img class="photo_play"  aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67616d00001e021d1cc2e40d533d7bcebf5dae" alt="Bitch I'm Back" class="mMx2LUixlnN_Fu45JpFB CmkY1Ag0tJDfnFXbGgju _EShSNaBK1wUIaZQFJJQ Yn2Ei5QZn19gria6LjZj" srcset="https://i.scdn.co/image/ab67616d00001e021d1cc2e40d533d7bcebf5dae 150w, https://i.scdn.co/image/ab67616d00001e021d1cc2e40d533d7bcebf5dae 300w, https://i.scdn.co/image/ab67616d0000b2731d1cc2e40d533d7bcebf5dae 320w, https://i.scdn.co/image/ab67616d0000b2731d1cc2e40d533d7bcebf5dae 640w" sizes="(min-width: 1280px) 232px, 192px">
+                        <div class="title_name">Malwa Block</div> 
+                     <div class="title_author">Sidhu Moose Wala, Wazir Patar</div>  
+                    </div>
+                    <div class="album">Moosetape</div>
+                    <div class="date">Jan 30, 2024</div> 
+                    <div class="clock"><svg class="clock_ka_dil"data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 16 16" class="Svg-sc-ytk21e-0 dYnaPI"><path d="M15.724 4.22A4.313 4.313 0 0 0 12.192.814a4.269 4.269 0 0 0-3.622 1.13.837.837 0 0 1-1.14 0 4.272 4.272 0 0 0-6.21 5.855l5.916 7.05a1.128 1.128 0 0 0 1.727 0l5.916-7.05a4.228 4.228 0 0 0 .945-3.577z"></path></svg>
+                        <div class="clock_time">3:59</div>
+                        <svg class="clock_ke_dots" data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 16 16" class="Svg-sc-ytk21e-0 dYnaPI"><path d="M3 8a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm6.5 0a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zM16 8a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"></path></svg>
+                       </div> 
+                 </div> 
+                 <div class="playlist_ke_ganne">
+                    <div class="hashtag  "><h6 class="hashtag_h6  hash_h6">11</h6>
+                        <svg class="hashtag_play"data-encore-id="icon" role="img" aria-hidden="true" class="Svg-sc-ytk21e-0 bneLcE UIBT7E6ZYMcSDl1KL62g" viewBox="0 0 24 24"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg> 
+                       </div>
+                    <div class="title">
+                        <img class="photo_play"  aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67616d00001e021d1cc2e40d533d7bcebf5dae" alt="Bitch I'm Back" class="mMx2LUixlnN_Fu45JpFB CmkY1Ag0tJDfnFXbGgju _EShSNaBK1wUIaZQFJJQ Yn2Ei5QZn19gria6LjZj" srcset="https://i.scdn.co/image/ab67616d00001e021d1cc2e40d533d7bcebf5dae 150w, https://i.scdn.co/image/ab67616d00001e021d1cc2e40d533d7bcebf5dae 300w, https://i.scdn.co/image/ab67616d0000b2731d1cc2e40d533d7bcebf5dae 320w, https://i.scdn.co/image/ab67616d0000b2731d1cc2e40d533d7bcebf5dae 640w" sizes="(min-width: 1280px) 232px, 192px">
+                        <div class="title_name">Bitch I'm Back</div> 
+                     <div class="title_author">Sidhu Moose Wala</div>  
+                    </div>
+                    <div class="album">Moosetape</div>
+                    <div class="date">Jan 30, 2024</div> 
+                    <div class="clock"><svg class="clock_ka_dil"data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 16 16" class="Svg-sc-ytk21e-0 dYnaPI"><path d="M15.724 4.22A4.313 4.313 0 0 0 12.192.814a4.269 4.269 0 0 0-3.622 1.13.837.837 0 0 1-1.14 0 4.272 4.272 0 0 0-6.21 5.855l5.916 7.05a1.128 1.128 0 0 0 1.727 0l5.916-7.05a4.228 4.228 0 0 0 .945-3.577z"></path></svg>
+                        <div class="clock_time">3:50</div>
+                        <svg class="clock_ke_dots" data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 16 16" class="Svg-sc-ytk21e-0 dYnaPI"><path d="M3 8a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm6.5 0a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zM16 8a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"></path></svg>
+                       </div> 
+                 </div> 
+                 <div class="playlist_ke_ganne">
+                    <div class="hashtag">
+                        <h6 class="hashtag_h6 hash_h6">12</h6>
+                        <svg class="hashtag_play"data-encore-id="icon" role="img" aria-hidden="true" class="Svg-sc-ytk21e-0 bneLcE UIBT7E6ZYMcSDl1KL62g" viewBox="0 0 24 24"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg> 
+                       </div>
+                    <div class="title">
+                        <img class="photo_play" aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67616d00001e021e2a1ae3d7b1d9f393ec6302" alt="Peo Putt" class="mMx2LUixlnN_Fu45JpFB CmkY1Ag0tJDfnFXbGgju _EShSNaBK1wUIaZQFJJQ Yn2Ei5QZn19gria6LjZj" srcset="https://i.scdn.co/image/ab67616d00001e021e2a1ae3d7b1d9f393ec6302 150w, https://i.scdn.co/image/ab67616d00001e021e2a1ae3d7b1d9f393ec6302 300w, https://i.scdn.co/image/ab67616d0000b2731e2a1ae3d7b1d9f393ec6302 320w, https://i.scdn.co/image/ab67616d0000b2731e2a1ae3d7b1d9f393ec6302 640w" sizes="(min-width: 1280px) 232px, 192px">
+                        <div class="title_name">Peo Putt</div> 
+                     <div class="title_author">Amar Sehmbi</div>  
+                    </div>
+                    <div class="album">Peo Putt</div>
+                    <div class="date">Dec 1, 2023</div> 
+                    <div class="clock"><svg class="clock_ka_dil"data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 16 16" class="Svg-sc-ytk21e-0 dYnaPI"><path d="M15.724 4.22A4.313 4.313 0 0 0 12.192.814a4.269 4.269 0 0 0-3.622 1.13.837.837 0 0 1-1.14 0 4.272 4.272 0 0 0-6.21 5.855l5.916 7.05a1.128 1.128 0 0 0 1.727 0l5.916-7.05a4.228 4.228 0 0 0 .945-3.577z"></path></svg>
+                        <div class="clock_time">3:13</div>
+                        <svg class="clock_ke_dots" data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 16 16" class="Svg-sc-ytk21e-0 dYnaPI"><path d="M3 8a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm6.5 0a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zM16 8a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"></path></svg>
+                       </div> 
+                 </div>    
+            </div>
+            <div class="playlist_ke_main_ka_footer">
+                <div class="fthd" id="playlist_ka_fthd">
+                    <div class="box" id="box1">
+                        <h6 class="midh6">Company</h6>
+                        <ul>
+                          <li class="listitems">About</li>
+                          <li class="listitems">Jobs</li>
+                          <li class="listitems">For the records</li>
+                        </ul>
+                    </div>
+                    <div class="box" id="box3">
+                        <h6 class="midh6">Communities</h6>
+                        <ul>
+                          <li class="listitems">For Aritists</li>
+                          <li class="listitems">Developers</li>
+                          <li class="listitems">Advertising</li>
+                          <li class="listitems">Investors</li>
+                          <li class="listitems">Venders</li>
+                        </ul>
+                    </div>
+                    <div class="box" id="box3">
+                        <h6 class="midh6">Useful links</h6>
+                        <ul>
+                          <li class="listitems">Support</li>
+                          <li class="listitems">Free Mobile App</li>
+                        </ul>
+                    </div>
+                    <div class="box" id="box4"></div>
+                    <div class="insta">
+                        <button class="mani_ka_footer_ke_social_media_button"><svg class="icon2" role="img" height="16" width="16" aria-hidden="true" viewBox="0 0 16 16" data-encore-id="icon" class="Svg-sc-ytk21e-0 hOjEcl"><path d="M8 1.44c2.136 0 2.389.009 3.233.047.78.036 1.203.166 1.485.276.348.128.663.332.921.598.266.258.47.573.599.921.11.282.24.706.275 1.485.039.844.047 1.097.047 3.233s-.008 2.389-.047 3.232c-.035.78-.166 1.204-.275 1.486a2.654 2.654 0 01-1.518 1.518c-.282.11-.706.24-1.486.275-.843.039-1.097.047-3.233.047s-2.39-.008-3.232-.047c-.78-.035-1.204-.165-1.486-.275a2.477 2.477 0 01-.921-.599 2.477 2.477 0 01-.599-.92c-.11-.282-.24-.706-.275-1.486-.038-.844-.047-1.096-.047-3.232s.009-2.39.047-3.233c.036-.78.166-1.203.275-1.485.129-.348.333-.663.599-.921a2.49 2.49 0 01.92-.599c.283-.11.707-.24 1.487-.275.843-.038 1.096-.047 3.232-.047L8 1.441zm.001-1.442c-2.172 0-2.445.01-3.298.048-.854.04-1.435.176-1.943.373a3.928 3.928 0 00-1.417.923c-.407.4-.722.883-.923 1.417-.198.508-.333 1.09-.372 1.942C.01 5.552 0 5.826 0 8c0 2.172.01 2.445.048 3.298.04.853.174 1.433.372 1.941.2.534.516 1.017.923 1.417.4.407.883.722 1.417.923.508.198 1.09.333 1.942.372.852.039 1.126.048 3.299.048 2.172 0 2.445-.01 3.298-.048.853-.04 1.433-.174 1.94-.372a4.087 4.087 0 002.34-2.34c.199-.508.334-1.09.373-1.942.039-.851.048-1.125.048-3.298s-.01-2.445-.048-3.298c-.04-.853-.174-1.433-.372-1.94a3.924 3.924 0 00-.923-1.418A3.928 3.928 0 0013.24.42c-.508-.197-1.09-.333-1.942-.371-.851-.041-1.125-.05-3.298-.05l.001-.001z"></path><path d="M8 3.892a4.108 4.108 0 100 8.216 4.108 4.108 0 000-8.216zm0 6.775a2.668 2.668 0 110-5.335 2.668 2.668 0 010 5.335zm4.27-5.978a.96.96 0 100-1.92.96.96 0 000 1.92z"></path></svg></button>
+                        <button class="mani_ka_footer_ke_social_media_button"><svg class="icon2" role="img" height="16" width="16" aria-hidden="true" viewBox="0 0 16 16" data-encore-id="icon" class="Svg-sc-ytk21e-0 hOjEcl"><path d="M13.54 3.889a2.968 2.968 0 001.333-1.683 5.937 5.937 0 01-1.929.738 2.992 2.992 0 00-.996-.706 2.98 2.98 0 00-1.218-.254 2.92 2.92 0 00-2.143.889 2.929 2.929 0 00-.889 2.15c0 .212.027.442.08.691a8.475 8.475 0 01-3.484-.932A8.536 8.536 0 011.532 2.54a2.993 2.993 0 00-.413 1.523c0 .519.12 1 .361 1.445.24.445.57.805.988 1.08a2.873 2.873 0 01-1.373-.374v.04c0 .725.23 1.365.69 1.92a2.97 2.97 0 001.739 1.048 2.937 2.937 0 01-1.365.056 2.94 2.94 0 001.063 1.5 2.945 2.945 0 001.77.603 5.944 5.944 0 01-3.77 1.302c-.243 0-.484-.016-.722-.048A8.414 8.414 0 005.15 14c.905 0 1.763-.12 2.572-.361.81-.24 1.526-.57 2.147-.988a9.044 9.044 0 001.683-1.46c.5-.556.911-1.155 1.234-1.798a9.532 9.532 0 00.738-1.988 8.417 8.417 0 00.246-2.429 6.177 6.177 0 001.508-1.563c-.56.249-1.14.407-1.738.476z"></path></svg></button>
+                        <button class="mani_ka_footer_ke_social_media_button"><svg class="icon2" role="img" height="16" width="16" aria-hidden="true" viewBox="0 0 16 16" data-encore-id="icon" class="Svg-sc-ytk21e-0 haNxPq"><path d="M16 8a8 8 0 10-9.25 7.903v-5.59H4.719V8H6.75V6.237c0-2.005 1.194-3.112 3.022-3.112.875 0 1.79.156 1.79.156V5.25h-1.008c-.994 0-1.304.617-1.304 1.25V8h2.219l-.355 2.313H9.25v5.59A8.002 8.002 0 0016 8z"></path></svg></button>
+                    </div>
+                </div>
+                <div class="ftft" id="search_ka_ftff">
+                    <h6 class="ft_ft_h6">Legal</h6>
+                    <h6 class="ft_ft_h6" id="playlist_ka_h6">Safety & Privacy</h6>
+                    <h6 class="ft_ft_h6">Privacy policy</h6>
+                    <h6 class="ft_ft_h6">Cookies</h6>
+                    <h6 class="ft_ft_h6">About Ads</h6>
+                    <h6 class="ft_ft_h6">Accessibility</h6>
+                    <h6 class="copy" id="playlist_ka_copy">@2024 Spotify AB</h6>
+                </div>
+            
+            </div>
+           </div>  
+           <script src="script.js"></script> 
+
+        </div>
+        <div class="footer" id="ft">
+                     <div class="footer_ft">
+                        <div class="ft_photo"></div>
+                        <div class="ft_song"></div>
+                        <div class="ft_controls">
+                            <div class="blank"></div>
+                            <div class="shuffle "style="color:#6C6C6C;">
+                                <i class="fa-solid fa-shuffle col"></i>
+                            </div>
+                            <div class="prev" style="color:#6C6C6C;">
+                                <i class="fa-solid fa-backward-step col"></i>
+                            </div>
+                            <div class="pause">
+                                <i class="fa-solid fa-play pause1"></i>
+                            </div>
+                            <div class="next" style="color:#6C6C6C;">
+                                <i class="fa-solid fa-forward-step col"></i>
+                            </div>
+                            <div class="repeat" style="color:#6C6C6C;">
+                                <i class="fa-solid fa-repeat col"></i>
+                            </div>
+                            <div class="timer" style="color:#6C6C6C;">
+                                <!-- <input type="range" id="myprogressbar" min="0" max="100"> -->
+                                <span id="currentTime" >0:00</span>
+                                <input type="range" id="myprogressbar" min="0" max="100">
+                                <span id="duration" style="color:#6C6C6C;" >0:00</span>
+                            </div>
+                            
+                        </div>
+                        <div class="ft_icon1">
+                            <svg  class="ft_icon"data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 16 16" class="Svg-sc-ytk21e-0 dYnaPI"><path d="M11.196 8 6 5v6l5.196-3z"></path><path d="M15.002 1.75A1.75 1.75 0 0 0 13.252 0h-10.5a1.75 1.75 0 0 0-1.75 1.75v12.5c0 .966.783 1.75 1.75 1.75h10.5a1.75 1.75 0 0 0 1.75-1.75V1.75zm-1.75-.25a.25.25 0 0 1 .25.25v12.5a.25.25 0 0 1-.25.25h-10.5a.25.25 0 0 1-.25-.25V1.75a.25.25 0 0 1 .25-.25h10.5z"></path></svg>
+                        </div>
+                        <div class="ft_icon2" ><svg class="ft_icon" data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 16 16" class="Svg-sc-ytk21e-0 dYnaPI"><path d="M13.426 2.574a2.831 2.831 0 0 0-4.797 1.55l3.247 3.247a2.831 2.831 0 0 0 1.55-4.797zM10.5 8.118l-2.619-2.62A63303.13 63303.13 0 0 0 4.74 9.075L2.065 12.12a1.287 1.287 0 0 0 1.816 1.816l3.06-2.688 3.56-3.129zM7.12 4.094a4.331 4.331 0 1 1 4.786 4.786l-3.974 3.493-3.06 2.689a2.787 2.787 0 0 1-3.933-3.933l2.676-3.045 3.505-3.99z"></path></svg></div>
+                        <div class="ft_icon3"><svg class="ft_icon" data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 16 16" class="Svg-sc-ytk21e-0 dYnaPI"><path d="M15 15H1v-1.5h14V15zm0-4.5H1V9h14v1.5zm-14-7A2.5 2.5 0 0 1 3.5 1h9a2.5 2.5 0 0 1 0 5h-9A2.5 2.5 0 0 1 1 3.5zm2.5-1a1 1 0 0 0 0 2h9a1 1 0 1 0 0-2h-9z"></path></svg></div>
+                        <div class="ft_icon4"><svg class="ft_icon"  data-encore-id="icon" role="presentation" aria-hidden="true" class="Svg-sc-ytk21e-0 dYnaPI" viewBox="0 0 16 16"><path d="M6 2.75C6 1.784 6.784 1 7.75 1h6.5c.966 0 1.75.784 1.75 1.75v10.5A1.75 1.75 0 0 1 14.25 15h-6.5A1.75 1.75 0 0 1 6 13.25V2.75zm1.75-.25a.25.25 0 0 0-.25.25v10.5c0 .138.112.25.25.25h6.5a.25.25 0 0 0 .25-.25V2.75a.25.25 0 0 0-.25-.25h-6.5zm-6 0a.25.25 0 0 0-.25.25v6.5c0 .138.112.25.25.25H4V11H1.75A1.75 1.75 0 0 1 0 9.25v-6.5C0 1.784.784 1 1.75 1H4v1.5H1.75zM4 15H2v-1.5h2V15z"></path><path d="M13 10a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm-1-5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"></path></svg></div>
+                        <div class="ft_volume" style="color: rgb(225,225,225);">
+                            <i class="fa-solid fa-volume-high mar " id="col"></i>
+                            <input type="range" id="volumebar" min="0" max="100">
+
+                        </div>
+                        <div class="ft_expand"><svg class="ft_icon"  data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 16 16" class="Svg-sc-ytk21e-0 dYnaPI"><path d="M6.53 9.47a.75.75 0 0 1 0 1.06l-2.72 2.72h1.018a.75.75 0 0 1 0 1.5H1.25v-3.579a.75.75 0 0 1 1.5 0v1.018l2.72-2.72a.75.75 0 0 1 1.06 0zm2.94-2.94a.75.75 0 0 1 0-1.06l2.72-2.72h-1.018a.75.75 0 1 1 0-1.5h3.578v3.579a.75.75 0 0 1-1.5 0V3.81l-2.72 2.72a.75.75 0 0 1-1.06 0z"></path></svg></div>
+                     </div>
+                     <script src="script2.js"></script>
+                     <script src="https://kit.fontawesome.com/f0b89d7de4.js" crossorigin="anonymous"></script>
+        </div>
+    </div>
+</body>
+</html>
+
