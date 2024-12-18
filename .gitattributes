@@ -1,3 +1,23 @@
-*.jpg linguist-vendored
-*.png linguist-vendored
-/node_modules/* linguist-vendored
+# Ignore node_modules folder (for Node.js projects)
+node_modules/
+
+# Ignore log files
+*.log
+
+# Ignore build output folders (for example, for React, Vue, etc.)
+dist/
+build/
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore any other files you don't need to track
+*.bak
+*.swp
+
+# Ignore all files and folders except JavaScript, HTML, and CSS files
+*
+!*.js
+!*.html
+!*.css
