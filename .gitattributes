@@ -4,7 +4,7 @@ node_modules/
 # Ignore log files
 *.log
 
-# Ignore build output folders (for example, for React, Vue, etc.)
+# Ignore build output folders (e.g., for React, Vue, etc.)
 dist/
 build/
 
@@ -16,8 +16,11 @@ Thumbs.db
 *.bak
 *.swp
 
-# Ignore all files and folders except JavaScript, HTML, and CSS files
+# Ignore all files and folders except JavaScript, JSX, TSX, HTML, and CSS files
 *
 !*.js
+!*.jsx
+!*.ts
+!*.tsx
 !*.html
 !*.css
